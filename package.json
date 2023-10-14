@@ -19,6 +19,7 @@
     "url": "https://github.com/alexferl/flowbite-mithril/issues"
   },
   "license": "MIT",
+  "main": "src/index.js",
   "scripts": {
     "lint": "npx @biomejs/biome check .",
     "format": "npx @biomejs/biome format . --write"
