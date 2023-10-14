@@ -1,4 +1,5 @@
 .gitignore
+.idea
 biome.json
 LICENSE
 node_modules
