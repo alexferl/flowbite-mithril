@@ -1,0 +1,41 @@
+{
+  "name": "flowbite-mithril",
+  "version": "0.0.0",
+  "description": "Mithril components built for Flowbite and Tailwind CSS",
+  "keywords": [
+    "design-system",
+    "flowbite",
+    "flowbite-mithril",
+    "mithril",
+    "tailwind",
+    "tailwindcss",
+    "tailwind-css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexferl/flowbite-mithril.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexferl/flowbite-mithril/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "npx @biomejs/biome check .",
+    "format": "npx @biomejs/biome format . --write"
+  },
+  "dependencies": {
+    "flowbite": "^1.8.1",
+    "tailwind-merge": "^1.14.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.2.2",
+    "autoprefixer": "^10.4.16",
+    "mithril": "^2.2.2",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
+  },
+  "peerDependencies": {
+    "mithril": "^2",
+    "tailwindcss": "^3"
+  }
+}
