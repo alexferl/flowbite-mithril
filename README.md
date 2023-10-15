@@ -2,7 +2,10 @@
 
 WIP!
 
-## Setup Tailwind CSS
+## Getting started
+Learn how to get started with Flowbite Mithril.
+
+### Setup Tailwind CSS
 Install Tailwind CSS:
 ```shell
 npm i autoprefixer postcss tailwindcss
@@ -27,7 +30,7 @@ Add Tailwind CSS to a CSS file:
 @tailwind utilities;
 ```
 
-## Install Flowbite Mithril
+### Install Flowbite Mithril
 Install Flowbite and Flowbite Mithril:
 ```shell
 npm i flowbite flowbite-mithril
