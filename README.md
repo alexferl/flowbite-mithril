@@ -1,5 +1,7 @@
 # flowbite-mithril
 
+WIP!
+
 ## Setup Tailwind CSS
 Install Tailwind CSS:
 ```shell
