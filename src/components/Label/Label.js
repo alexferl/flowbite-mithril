@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { labelTheme } from "./theme";
+import { labelTheme } from "./theme.js";
 
 const theme = labelTheme;
 

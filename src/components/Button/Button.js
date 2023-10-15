@@ -1,8 +1,8 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { buttonGroupTheme, buttonTheme } from "./theme";
-import { Spinner } from "../Spinner/Spinner";
-import { ButtonGroup } from "./ButtonGroup";
+import { buttonGroupTheme, buttonTheme } from "./theme.js";
+import { Spinner } from "../Spinner/Spinner.js";
+import { ButtonGroup } from "./ButtonGroup.js";
 
 const theme = buttonTheme;
 

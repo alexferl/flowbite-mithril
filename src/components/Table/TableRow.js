@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { tableTheme } from "./theme";
+import { tableTheme } from "./theme.js";
 
 const theme = tableTheme.row;
 

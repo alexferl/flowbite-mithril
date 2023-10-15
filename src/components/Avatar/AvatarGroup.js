@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { avatarTheme } from "./theme";
+import { avatarTheme } from "./theme.js";
 
 const theme = avatarTheme.group;
 

@@ -1,10 +1,10 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { navbarTheme } from "./theme";
-import { NavbarBrand } from "./NavbarBrand";
-import { NavbarCollapse } from "./NavbarCollapse";
-import { NavbarLink } from "./NavbarLink";
-import { NavbarToggle } from "./NavbarToggle";
+import { navbarTheme } from "./theme.js";
+import { NavbarBrand } from "./NavbarBrand.js";
+import { NavbarCollapse } from "./NavbarCollapse.js";
+import { NavbarLink } from "./NavbarLink.js";
+import { NavbarToggle } from "./NavbarToggle.js";
 
 const theme = navbarTheme.root;
 

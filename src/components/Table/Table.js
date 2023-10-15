@@ -1,11 +1,11 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { tableTheme } from "./theme";
-import { TableHead } from "./TableHead";
-import { TableBody } from "./TableBody";
-import { TableRow } from "./TableRow";
-import { TableCell } from "./TableCell";
-import { TableHeadCell } from "./TableHeadCell";
+import { tableTheme } from "./theme.js";
+import { TableHead } from "./TableHead.js";
+import { TableBody } from "./TableBody.js";
+import { TableRow } from "./TableRow.js";
+import { TableCell } from "./TableCell.js";
+import { TableHeadCell } from "./TableHeadCell.js";
 
 const theme = tableTheme.root;
 

@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { spinnerTheme } from "./theme";
+import { spinnerTheme } from "./theme.js";
 
 const theme = spinnerTheme;
 

@@ -1,9 +1,9 @@
-import { avatarTheme } from './components/Avatar/theme';
-import { buttonGroupTheme, buttonTheme } from './components/Button/theme';
-import { labelTheme } from './components/Label/theme';
-import { navbarTheme } from './components/Navbar/theme';
-import { spinnerTheme } from './components/Spinner/theme';
-import { tableTheme } from './components/Table/theme';
+import { avatarTheme } from "./components/Avatar/theme.js";
+import { buttonGroupTheme, buttonTheme } from "./components/Button/theme.js";
+import { labelTheme } from "./components/Label/theme.js";
+import { navbarTheme } from "./components/Navbar/theme.js";
+import { spinnerTheme } from "./components/Spinner/theme.js";
+import { tableTheme } from "./components/Table/theme.js";
 
 export const theme = {
   avatar: avatarTheme,

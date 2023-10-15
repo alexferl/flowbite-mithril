@@ -1,8 +1,8 @@
-export * from "./components/Avatar";
-export * from "./components/Button";
-export * from "./components/Label";
-export * from "./components/Navbar";
-export * from "./components/Spinner";
-export * from "./components/Table";
+export * from "./components/Avatar/index.js";
+export * from "./components/Button/index.js";
+export * from "./components/Label/index.js";
+export * from "./components/Navbar/index.js";
+export * from "./components/Spinner/index.js";
+export * from "./components/Table/index.js";
 
-export * from './theme';
+export * from "./theme.js";

@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { buttonGroupTheme } from "./theme";
+import { buttonGroupTheme } from "./theme.js";
 
 const theme = buttonGroupTheme;
 

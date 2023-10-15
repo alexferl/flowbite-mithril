@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { navbarTheme } from "./theme";
+import { navbarTheme } from "./theme.js";
 
 const theme = navbarTheme.toggle;
 
