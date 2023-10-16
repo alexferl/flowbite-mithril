@@ -8,7 +8,7 @@ const theme = avatarTheme;
 
 export const AvatarComponent = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     const alt = attrs.alt || "";
     const bordered = attrs.bordered || false;
     const color = attrs.color || "light";

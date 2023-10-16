@@ -11,7 +11,7 @@ const theme = tableTheme.root;
 
 const TableComponent = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     return m("div", { class: twMerge(theme.wrapper) }, [
       m("div", { class: twMerge(theme.shadow, className) }),
       m("table", { class: twMerge(theme.base, className) }, children),

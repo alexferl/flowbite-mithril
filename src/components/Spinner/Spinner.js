@@ -6,7 +6,7 @@ const theme = spinnerTheme;
 
 export const Spinner = () => ({
   view: ({ attrs }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     const color = attrs.color || "info";
     const light = attrs.light;
     const size = attrs.size || "md";

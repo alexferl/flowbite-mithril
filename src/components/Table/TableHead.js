@@ -6,7 +6,7 @@ const theme = tableTheme.head;
 
 export const TableHead = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     return m("thead", { class: twMerge(theme.base, className) }, m("tr", children));
   },
 });

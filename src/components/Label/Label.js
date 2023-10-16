@@ -6,7 +6,7 @@ const theme = labelTheme;
 
 export const Label = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     const color = attrs.color || "default";
     const disabled = attrs.disabled || false;
     return m(

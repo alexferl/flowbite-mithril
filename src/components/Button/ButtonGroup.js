@@ -6,7 +6,7 @@ const theme = buttonGroupTheme;
 
 export const ButtonGroup = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     const outline = attrs.outline;
     const pill = attrs.pill;
     return m(

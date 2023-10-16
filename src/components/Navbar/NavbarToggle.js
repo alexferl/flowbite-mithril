@@ -6,7 +6,7 @@ const theme = navbarTheme.toggle;
 
 export const NavbarToggle = () => ({
   view: ({ attrs }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     return m("button", { class: twMerge(theme.base, className) }, m("span", { class: "sr-only" }, "Open main menu"));
   },
 });

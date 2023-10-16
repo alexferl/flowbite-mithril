@@ -8,7 +8,7 @@ const theme = buttonTheme;
 
 export const ButtonComponent = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     const color = attrs.color || "info";
     const disabled = attrs.disabled || false;
     const fullSized = attrs.fullSized;

@@ -6,7 +6,7 @@ const theme = navbarTheme.link;
 
 export const NavbarLink = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     const active = attrs.active;
     const disabled = attrs.disabled;
     const href = attrs.href;

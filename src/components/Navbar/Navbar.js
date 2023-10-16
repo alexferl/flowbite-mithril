@@ -10,7 +10,7 @@ const theme = navbarTheme.root;
 
 export const NavbarComponent = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     const bordered = attrs.bordered;
     const rounded = attrs.rounded;
     const fluid = attrs.fluid || false;

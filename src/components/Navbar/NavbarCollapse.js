@@ -6,7 +6,7 @@ const theme = navbarTheme.collapse;
 
 export const NavbarCollapse = () => ({
   view: ({ attrs, children }) => {
-    const className = attrs.className;
+    const className = attrs.class;
     return m("div", { class: twMerge(theme.base, className) }, m("ul", { class: theme.list }, children));
   },
 });
