@@ -8,8 +8,8 @@ import { NavbarToggle } from "./NavbarToggle.js";
 
 const theme = navbarTheme.root;
 
-export const NavbarComponent = () => ({
-  view: ({ attrs, children }) => {
+export const NavbarComponent = {
+  view({ attrs, children }) {
     const className = attrs.class;
     const bordered = attrs.bordered;
     const rounded = attrs.rounded;
@@ -33,7 +33,7 @@ export const NavbarComponent = () => ({
       ),
     );
   },
-});
+};
 
 export const Navbar = Object.assign(NavbarComponent, {
   Brand: NavbarBrand,

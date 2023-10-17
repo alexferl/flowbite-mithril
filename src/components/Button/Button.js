@@ -6,8 +6,8 @@ import { ButtonGroup } from "./ButtonGroup.js";
 
 const theme = buttonTheme;
 
-export const ButtonComponent = () => ({
-  view: ({ attrs, children }) => {
+export const ButtonComponent = {
+  view({ attrs, children }) {
     const className = attrs.class;
     const color = attrs.color || "info";
     const disabled = attrs.disabled || false;
@@ -22,6 +22,7 @@ export const ButtonComponent = () => ({
     const pill = attrs.pill || false;
     const positionInGroup = attrs.positionInGroup || "none";
     const size = attrs.size || "md";
+    const onclick = attrs.onclick;
 
     return m(
       "button",
@@ -40,6 +41,7 @@ export const ButtonComponent = () => ({
           buttonGroupTheme.position[positionInGroup],
           className,
         ),
+        onclick: onclick,
       },
       [
         m(
@@ -77,7 +79,7 @@ export const ButtonComponent = () => ({
       ],
     );
   },
-});
+};
 
 export const Button = Object.assign(ButtonComponent, {
   Group: ButtonGroup,

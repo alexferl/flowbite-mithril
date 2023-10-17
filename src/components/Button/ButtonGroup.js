@@ -2,17 +2,15 @@ import m from "mithril";
 import { twMerge } from "tailwind-merge";
 import { buttonGroupTheme } from "./theme.js";
 
-const theme = buttonGroupTheme;
-
-export const ButtonGroup = () => ({
-  view: ({ attrs, children }) => {
+export const ButtonGroup = {
+  view({ attrs, children }) {
     const className = attrs.class;
     const outline = attrs.outline;
     const pill = attrs.pill;
     return m(
       "div",
       {
-        class: twMerge(theme.base, className),
+        class: twMerge(buttonGroupTheme.base, className),
         role: "group",
       },
       children.map((child, index) => {
@@ -23,4 +21,4 @@ export const ButtonGroup = () => ({
       }),
     );
   },
-});
+};

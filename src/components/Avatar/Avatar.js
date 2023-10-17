@@ -6,8 +6,8 @@ import { AvatarGroupCounter } from "./AvatarGroupConter.js";
 
 const theme = avatarTheme;
 
-export const AvatarComponent = () => ({
-  view: ({ attrs, children }) => {
+export const AvatarComponent = {
+  view({ attrs, children }) {
     const className = attrs.class;
     const alt = attrs.alt || "";
     const bordered = attrs.bordered || false;
@@ -84,7 +84,7 @@ export const AvatarComponent = () => ({
       children.length > 0 && m("div", children),
     );
   },
-});
+};
 
 export const Avatar = Object.assign(AvatarComponent, {
   Group: AvatarGroup,

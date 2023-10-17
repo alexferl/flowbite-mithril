@@ -4,8 +4,8 @@ import { navbarTheme } from "./theme.js";
 
 const theme = navbarTheme.link;
 
-export const NavbarLink = () => ({
-  view: ({ attrs, children }) => {
+export const NavbarLink = {
+  view({ attrs, children }) {
     const className = attrs.class;
     const active = attrs.active;
     const disabled = attrs.disabled;
@@ -28,4 +28,4 @@ export const NavbarLink = () => ({
       ),
     );
   },
-});
+};

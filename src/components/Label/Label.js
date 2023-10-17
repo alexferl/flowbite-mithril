@@ -4,8 +4,8 @@ import { labelTheme } from "./theme.js";
 
 const theme = labelTheme;
 
-export const Label = () => ({
-  view: ({ attrs, children }) => {
+export const Label = {
+  view({ attrs, children }) {
     const className = attrs.class;
     const color = attrs.color || "default";
     const disabled = attrs.disabled || false;
@@ -18,4 +18,4 @@ export const Label = () => ({
       children,
     );
   },
-});
+};

@@ -3,13 +3,11 @@
   "version": "0.0.0",
   "description": "Mithril components built for Flowbite and Tailwind CSS",
   "keywords": [
-    "design-system",
     "flowbite",
     "flowbite-mithril",
     "mithril",
     "tailwind",
-    "tailwindcss",
-    "tailwind-css"
+    "tailwindcss"
   ],
   "bugs": {
     "url": "https://github.com/alexferl/flowbite-mithril/issues"

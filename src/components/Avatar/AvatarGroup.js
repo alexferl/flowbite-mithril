@@ -4,9 +4,9 @@ import { avatarTheme } from "./theme.js";
 
 const theme = avatarTheme.group;
 
-export const AvatarGroup = () => ({
-  view: ({ attrs, children }) => {
+export const AvatarGroup = {
+  view({ attrs, children }) {
     const className = attrs.class;
     return m("div", { class: twMerge(theme.base, className) }, children);
   },
-});
+};
