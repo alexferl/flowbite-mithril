@@ -40,7 +40,7 @@ Add the Flowbite plugin to `tailwind.config.js`, and include content from `flowb
 ```javascript
 module.exports = {
   content: [
-    "node_modules/flowbite-react/src/**/*.js"
+    "./node_modules/flowbite-mithril/src/**/*.js"
   ],
   plugins: [require("flowbite/plugin")],
 };
