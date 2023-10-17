@@ -23,9 +23,7 @@
     "format": "npx @biomejs/biome format . --write"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.2.2",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31"
+    "@biomejs/biome": "^1.2.2"
   },
   "peerDependencies": {
     "flowbite": "^1.8.1",
