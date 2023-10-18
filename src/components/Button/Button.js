@@ -8,21 +8,23 @@ const theme = buttonTheme;
 
 export const ButtonComponent = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    const color = attrs.color || "info";
-    const disabled = attrs.disabled || false;
-    const fullSized = attrs.fullSized;
-    const isProcessing = attrs.isProcessing || false;
-    const processingLabel = attrs.processingLabel || "Loading...";
-    const processingSpinner = attrs.processingSpinner;
-    const gradientDuoTone = attrs.gradientDuoTone;
-    const gradientMonochrome = attrs.gradientMonochrome;
-    const label = attrs.label;
-    const outline = attrs.outline || false;
-    const pill = attrs.pill || false;
-    const positionInGroup = attrs.positionInGroup || "none";
-    const size = attrs.size || "md";
-    const onclick = attrs.onclick;
+    const {
+      class: className,
+      color = "info", // "blue" | "cyan" | "dark" | "failure" | "gray" | "green" | "indigo" | "info" | "light" | "lime" | "pink" | "purple" | "red" | "success" | "teal" | "warning" | "yellow"
+      disabled = false,
+      fullSized,
+      isProcessing = false,
+      processingLabel = "Loading...",
+      processingSpinner,
+      gradientDuoTone, // "cyanToBlue" | "greenToBlue" | "pinkToOrange" | "purpleToBlue" | "purpleToPink" | "redToYellow" | "tealToLime"
+      gradientMonochrome, // "cyan" | "failure" | "info" | "lime" | "pink" | "purple" | "success" | "teal"
+      label,
+      outline = false,
+      pill = false,
+      positionInGroup = "none", // "none" | "start" | "middle" | "end"
+      size = "md", // "xs" | "sm" | "md" | "lg" | "xl"
+      ...props
+    } = attrs;
 
     return m(
       "button",
@@ -41,7 +43,7 @@ export const ButtonComponent = {
           buttonGroupTheme.position[positionInGroup],
           className,
         ),
-        onclick: onclick,
+        ...props,
       },
       [
         m(

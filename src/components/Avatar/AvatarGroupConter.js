@@ -6,9 +6,8 @@ const theme = avatarTheme.groupCounter;
 
 export const AvatarGroupCounter = {
   view({ attrs }) {
-    const className = attrs.class;
-    const href = attrs.href;
-    const total = attrs.total;
-    return m(m.route.Link, { href: href, class: twMerge(theme.base, className) }, `+${total}`);
+    const { class: className, href, total, ...props } = attrs;
+
+    return m(m.route.Link, { href: href, class: twMerge(theme.base, className), ...props }, `+${total}`);
   },
 };

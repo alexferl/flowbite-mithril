@@ -6,14 +6,19 @@ const theme = spinnerTheme;
 
 export const Spinner = {
   view({ attrs }) {
-    const className = attrs.class;
-    const color = attrs.color || "info";
-    const light = attrs.light;
-    const size = attrs.size || "md";
+    const {
+      class: className,
+      color = "info", // "failure" | "gray" | "info" | "pink" | "purple" | "success" | "warning"
+      light,
+      size = "md", // "xs" | "sm" | "md" | "lg" | "xl"
+      ...props
+    } = attrs;
+
     return m(
       "span",
       {
         role: "status",
+        ...props,
       },
       m(
         "svg",

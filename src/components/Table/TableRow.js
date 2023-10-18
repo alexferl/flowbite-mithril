@@ -6,7 +6,12 @@ const theme = tableTheme.row;
 
 export const TableRow = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    return m("tr", { class: twMerge(theme.base, className) }, children);
+    const { class: className, hoverable, striped, ...props } = attrs;
+
+    return m(
+      "tr",
+      { class: twMerge(theme.base, striped && theme.striped, hoverable && theme.hovered, className), ...props },
+      children,
+    );
   },
 };

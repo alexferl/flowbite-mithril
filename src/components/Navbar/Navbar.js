@@ -10,10 +10,8 @@ const theme = navbarTheme.root;
 
 export const NavbarComponent = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    const bordered = attrs.bordered;
-    const rounded = attrs.rounded;
-    const fluid = attrs.fluid || false;
+    const { class: className, bordered, rounded, fluid = false, ...props } = attrs;
+
     return m(
       "nav",
       {
@@ -23,6 +21,7 @@ export const NavbarComponent = {
           theme.rounded[rounded ? "on" : "off"],
           className,
         ),
+        ...props,
       },
       m(
         "div",

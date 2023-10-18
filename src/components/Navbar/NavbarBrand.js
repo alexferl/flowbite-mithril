@@ -6,8 +6,8 @@ const theme = navbarTheme.brand;
 
 export const NavbarBrand = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    const href = attrs.href;
-    return m(m.route.Link, { class: twMerge(theme.base, className), href: href }, children);
+    const { class: className, ...props } = attrs;
+
+    return m(m.route.Link, { class: twMerge(theme.base, className), ...props }, children);
   },
 };

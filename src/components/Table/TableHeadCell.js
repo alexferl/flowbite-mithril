@@ -6,7 +6,8 @@ const theme = tableTheme.head;
 
 export const TableHeadCell = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    return m("th", { class: twMerge(theme.cell.base, className) }, children);
+    const { class: className, ...props } = attrs;
+
+    return m("th", { class: twMerge(theme.cell.base, className), ...props }, children);
   },
 };

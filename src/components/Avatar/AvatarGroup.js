@@ -6,7 +6,8 @@ const theme = avatarTheme.group;
 
 export const AvatarGroup = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    return m("div", { class: twMerge(theme.base, className) }, children);
+    const { class: className, ...props } = attrs;
+
+    return m("div", { class: twMerge(theme.base, className), ...props }, children);
   },
 };

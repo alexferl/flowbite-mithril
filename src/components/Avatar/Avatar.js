@@ -8,17 +8,20 @@ const theme = avatarTheme;
 
 export const AvatarComponent = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    const alt = attrs.alt || "";
-    const bordered = attrs.bordered || false;
-    const color = attrs.color || "light";
-    const img = attrs.img;
-    const placeholderInitials = attrs.placeholderInitials || "";
-    const rounded = attrs.rounded || false;
-    const size = attrs.size || "md";
-    const stacked = attrs.stacked || false;
-    const status = attrs.status;
-    const statusPosition = attrs.statusPosition || "top-left";
+    const {
+      class: className,
+      alt = "",
+      bordered = false,
+      color = "light", // "dark" | "failure" | "gray" | "info" | "light" | "pink" | "purple" | "success" | "warning"
+      img,
+      initials = "",
+      rounded = false,
+      size = "md", // "xs" | "sm" | "md" | "lg" | "xl"
+      stacked = false,
+      status, // "away" | "busy" | "offline" | "online"
+      statusPosition = "top-left", // "bottom-left" | "bottom-center" | "bottom-right" | "top-left" | "top-center" | "top-right" | "top-left" | "center-right" | "center" | "center-left"
+      ...props
+    } = attrs;
 
     const imgClassName = twMerge(
       theme.root.img.base,
@@ -30,15 +33,19 @@ export const AvatarComponent = {
       theme.root.size[size],
     );
 
-    const imgProps = twMerge(imgClassName, theme.root.img.on);
+    const imgProps = {
+      class: twMerge(imgClassName, theme.root.img.on),
+    };
 
     return m(
       "div",
-      { class: twMerge(theme.root.base, className) },
+      { class: twMerge(theme.root.base, className), ...props },
       m("div", { class: "relative" }, [
         img
-          ? m("img", { class: imgProps, alt: alt, src: img })
-          : placeholderInitials
+          ? typeof img === "string"
+            ? m("img", { alt: alt, src: img, ...imgProps })
+            : m(img, { alt, ...imgProps })
+          : initials
           ? m(
               "div",
               {
@@ -52,7 +59,7 @@ export const AvatarComponent = {
                   rounded && theme.root.rounded,
                 ),
               },
-              m("span", { class: twMerge(theme.root.initials.text) }, placeholderInitials),
+              m("span", { class: twMerge(theme.root.initials.text) }, initials),
             )
           : m(
               "div",

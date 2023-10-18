@@ -6,10 +6,8 @@ const theme = navbarTheme.link;
 
 export const NavbarLink = {
   view({ attrs, children }) {
-    const className = attrs.class;
-    const active = attrs.active;
-    const disabled = attrs.disabled;
-    const href = attrs.href;
+    const { class: className, active, disabled, ...props } = attrs;
+
     return m(
       "li",
       m(
@@ -22,7 +20,7 @@ export const NavbarLink = {
             theme.disabled[disabled ? "on" : "off"],
             className,
           ),
-          href: href,
+          ...props,
         },
         children,
       ),

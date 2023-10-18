@@ -1,6 +1,43 @@
 # flowbite-mithril
 
-WIP!
+Work in progress.
+
+✅ = Fully implemented
+
+🚧 = Partially implemented
+
+❌ = Not implemented
+
+|     Name     | Done |
+|:------------:|------|
+|  Accordion   | ❌    |
+|    Alert     | ✅    |
+|    Avatar    | ✅    |
+|    Badge     | ❌    |
+|    Banner    | ❌    |
+|  Breadcrumb  | ❌    |
+|    Button    | ✅    |
+| Button group | ✅    |
+|     Card     | ❌    |
+|   Carousel   | ❌    |
+|  Datepicker  | ❌    |
+|   Dropdown   | ❌    |
+|    Footer    | ❌    |
+|    Forms     | ❌    |
+|     KDB      | ❌    |
+|  List group  | ❌    |
+|    Modal     | ❌    |
+|    Navbar    | ✅    |
+|  Pagination  | ❌    |
+| Progress bar | ❌    |
+|    Rating    | ❌    |
+|   Sidebar    | ❌    |
+|   Spinner    |  ✅    |
+|    Table     |  🚧    |
+|    Tabs      | ❌    |
+|   Timeline   | ❌    |
+|    Toast     | ❌    |
+|   Tooltip    | ❌    |
 
 ## Getting started
 Learn how to get started with Flowbite Mithril.
@@ -33,7 +70,7 @@ Add Tailwind CSS to a CSS file:
 ### Install Flowbite Mithril
 Install Flowbite and Flowbite Mithril:
 ```shell
-npm i -D flowbite flowbite-mithril
+npm i -D flowbite github:alexferl/flowbite-mithril
 ```
 
 Add the Flowbite plugin to `tailwind.config.js`, and include content from `flowbite-mithril`:
