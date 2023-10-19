@@ -1,15 +1,17 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { buttonGroupTheme } from "./theme.js";
 
 export const ButtonGroup = {
   view({ attrs, children }) {
-    const { class: className, outline, pill, ...props } = attrs;
+    const { class: className, outline, pill, theme: customTheme = {}, ...props } = attrs;
+    const theme = mergeDeep(buttonGroupTheme, customTheme);
 
     return m(
       "div",
       {
-        class: twMerge(buttonGroupTheme.base, className),
+        class: twMerge(theme.base, className),
         role: "group",
         ...props,
       },

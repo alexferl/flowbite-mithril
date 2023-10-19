@@ -1,16 +1,16 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { navbarTheme } from "./theme.js";
 import { NavbarBrand } from "./NavbarBrand.js";
 import { NavbarCollapse } from "./NavbarCollapse.js";
 import { NavbarLink } from "./NavbarLink.js";
 import { NavbarToggle } from "./NavbarToggle.js";
 
-const theme = navbarTheme.root;
-
 export const NavbarComponent = {
   view({ attrs, children }) {
-    const { class: className, bordered, rounded, fluid = false, ...props } = attrs;
+    const { class: className, bordered, rounded, fluid = false, theme: customTheme = {}, ...props } = attrs;
+    const theme = mergeDeep(navbarTheme.root, customTheme);
 
     return m(
       "nav",

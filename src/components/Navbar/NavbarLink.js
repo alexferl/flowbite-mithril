@@ -1,12 +1,14 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { navbarTheme } from "./theme.js";
 
 const theme = navbarTheme.link;
 
 export const NavbarLink = {
   view({ attrs, children }) {
-    const { class: className, active, disabled, ...props } = attrs;
+    const { class: className, active, disabled, theme: customTheme = {}, ...props } = attrs;
+    const theme = mergeDeep(navbarTheme.link, customTheme);
 
     return m(
       "li",

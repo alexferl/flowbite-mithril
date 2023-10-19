@@ -1,10 +1,9 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { buttonGroupTheme, buttonTheme } from "./theme.js";
 import { Spinner } from "../Spinner/Spinner.js";
 import { ButtonGroup } from "./ButtonGroup.js";
-
-const theme = buttonTheme;
 
 export const ButtonComponent = {
   view({ attrs, children }) {
@@ -23,8 +22,10 @@ export const ButtonComponent = {
       pill = false,
       positionInGroup = "none", // "none" | "start" | "middle" | "end"
       size = "md", // "xs" | "sm" | "md" | "lg" | "xl"
+      theme: customTheme = {},
       ...props
     } = attrs;
+    const theme = mergeDeep(buttonTheme, customTheme);
 
     return m(
       "button",

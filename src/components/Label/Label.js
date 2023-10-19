@@ -1,8 +1,7 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { labelTheme } from "./theme.js";
-
-const theme = labelTheme;
 
 export const Label = {
   view({ attrs, children }) {
@@ -11,8 +10,10 @@ export const Label = {
       color = "default", // "default" | "failure" | "info" | "success" | "warning
       disabled = false,
       value,
+      theme: customTheme = {},
       ...props
     } = attrs;
+    const theme = mergeDeep(labelTheme, customTheme);
 
     return m(
       "label",

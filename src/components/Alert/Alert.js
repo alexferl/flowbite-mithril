@@ -1,9 +1,8 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep";
 import { alertTheme } from "./theme.js";
 import { CloseIcon } from "flowbite-icons-mithril/outline";
-
-const theme = alertTheme;
 
 export const Alert = {
   view({ attrs, children }) {
@@ -14,9 +13,11 @@ export const Alert = {
       icon,
       onDismiss,
       rounded = true,
+      theme: customTheme = {},
       withBorderAccent = false,
       ...props
     } = attrs;
+    const theme = mergeDeep(alertTheme, customTheme);
 
     return m(
       "div",

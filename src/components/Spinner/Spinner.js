@@ -1,8 +1,7 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { spinnerTheme } from "./theme.js";
-
-const theme = spinnerTheme;
 
 export const Spinner = {
   view({ attrs }) {
@@ -11,8 +10,10 @@ export const Spinner = {
       color = "info", // "failure" | "gray" | "info" | "pink" | "purple" | "success" | "warning"
       light,
       size = "md", // "xs" | "sm" | "md" | "lg" | "xl"
+      theme: customTheme = {},
       ...props
     } = attrs;
+    const theme = mergeDeep(spinnerTheme, customTheme);
 
     return m(
       "span",

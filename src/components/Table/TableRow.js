@@ -1,12 +1,12 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { tableTheme } from "./theme.js";
-
-const theme = tableTheme.row;
 
 export const TableRow = {
   view({ attrs, children }) {
-    const { class: className, hoverable, striped, ...props } = attrs;
+    const { class: className, hoverable, striped, theme: customTheme = {}, ...props } = attrs;
+    const theme = mergeDeep(tableTheme.row, customTheme);
 
     return m(
       "tr",

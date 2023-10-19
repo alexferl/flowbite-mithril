@@ -1,10 +1,9 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
+import { mergeDeep } from "../../helpers/merge-deep";
 import { avatarTheme } from "./theme.js";
 import { AvatarGroup } from "./AvatarGroup.js";
 import { AvatarGroupCounter } from "./AvatarGroupConter.js";
-
-const theme = avatarTheme;
 
 export const AvatarComponent = {
   view({ attrs, children }) {
@@ -20,8 +19,10 @@ export const AvatarComponent = {
       stacked = false,
       status, // "away" | "busy" | "offline" | "online"
       statusPosition = "top-left", // "bottom-left" | "bottom-center" | "bottom-right" | "top-left" | "top-center" | "top-right" | "top-left" | "center-right" | "center" | "center-left"
+      theme: customTheme = {},
       ...props
     } = attrs;
+    const theme = mergeDeep(avatarTheme, customTheme);
 
     const imgClassName = twMerge(
       theme.root.img.base,
