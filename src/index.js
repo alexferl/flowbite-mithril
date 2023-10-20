@@ -7,6 +7,7 @@ export * from "./components/Checkbox/index.js";
 export * from "./components/FileInput/index.js";
 export * from "./components/HelperText/index.js";
 export * from "./components/Label/index.js";
+export * from "./components/ListGroup/index.js";
 export * from "./components/Navbar/index.js";
 export * from "./components/Radio/index.js";
 export * from "./components/Range/index.js";

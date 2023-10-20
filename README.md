@@ -24,7 +24,7 @@ Work in progress.
 |   Dropdown   | ❌    |
 |    Footer    | ❌    |
 |     KDB      | ❌    |
-|  List group  | ❌    |
+|  List group  | ✅    |
 |    Modal     | ❌    |
 |    Navbar    | ✅    |
 |  Pagination  | ❌    |
