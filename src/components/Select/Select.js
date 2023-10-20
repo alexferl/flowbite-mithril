@@ -11,7 +11,7 @@ export const Select = {
       class: className,
       color = "gray", // "failure" | "gray" | "info" | "success" | "warning"
       helperText,
-      icon,
+      icon: Icon,
       shadow,
       size = "md", // "sm" | "md" | "lg"
       theme: customTheme = {},
@@ -22,7 +22,7 @@ export const Select = {
     return m("div", { class: twMerge(theme.base, className) }, [
       addon && m("span", { class: theme.addon }, addon),
       m("div", { class: theme.field.base }, [
-        icon && m("div", { class: theme.field.icon.base }, m(icon, { class: theme.field.icon.svg })),
+        Icon && m("div", { class: theme.field.icon.base }, m(Icon, { class: theme.field.icon.svg })),
         m(
           "select",
           {
@@ -30,7 +30,7 @@ export const Select = {
               theme.field.select.base,
               theme.field.select.colors[color],
               theme.field.select.sizes[size],
-              theme.field.select.withIcon[icon ? "on" : "off"],
+              theme.field.select.withIcon[Icon ? "on" : "off"],
               theme.field.select.withAddon[addon ? "on" : "off"],
               theme.field.select.withShadow[shadow ? "on" : "off"],
             ),

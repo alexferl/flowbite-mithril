@@ -11,8 +11,8 @@ export const TextInput = {
       class: className,
       color = "gray", // "failure" | "gray" | "info" | "success" | "warning"
       helperText,
-      icon,
-      rightIcon,
+      icon: Icon,
+      rightIcon: RightIcon,
       shadow,
       sizing = "md", // "sm" | "md" | "lg"
       theme: customTheme = {},
@@ -24,16 +24,16 @@ export const TextInput = {
       m("div", { class: twMerge(theme.base, className) }, [
         addon && m("span", { class: theme.addon }, addon),
         m("div", { class: theme.field.base }, [
-          icon && m("div", { class: theme.field.icon.base }, m(icon, { class: theme.field.icon.svg })),
-          rightIcon &&
-            m("div", { class: theme.field.rightIcon.base }, m(rightIcon, { class: theme.field.rightIcon.svg })),
+          Icon && m("div", { class: theme.field.icon.base }, m(Icon, { class: theme.field.icon.svg })),
+          RightIcon &&
+            m("div", { class: theme.field.rightIcon.base }, m(RightIcon, { class: theme.field.rightIcon.svg })),
           m("input", {
             class: twMerge(
               theme.field.input.base,
               theme.field.input.colors[color],
               theme.field.input.sizes[sizing],
-              theme.field.input.withIcon[icon ? "on" : "off"],
-              theme.field.input.withRightIcon[rightIcon ? "on" : "off"],
+              theme.field.input.withIcon[Icon ? "on" : "off"],
+              theme.field.input.withRightIcon[RightIcon ? "on" : "off"],
               theme.field.input.withAddon[addon ? "on" : "off"],
               theme.field.input.withShadow[shadow ? "on" : "off"],
             ),

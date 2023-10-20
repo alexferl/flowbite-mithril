@@ -10,7 +10,7 @@ export const Alert = {
       additionalContent,
       class: className,
       color = "info", // "blue" | "cyan" | "dark" | "failure" | "gray" | "green" | "indigo" | "info" | "light" | "lime" | "pink" | "purple" | "red" | "success" | "teal" | "warning" | "yellow"
-      icon,
+      icon: Icon,
       onDismiss,
       rounded = true,
       theme: customTheme = {},
@@ -33,7 +33,7 @@ export const Alert = {
         ...props,
       },
       m("div", { class: theme.wrapper }, [
-        icon && m(icon, { class: theme.icon }),
+        Icon && m(Icon, { class: theme.icon }),
         m("div", children),
         typeof onDismiss === "function" &&
           m(

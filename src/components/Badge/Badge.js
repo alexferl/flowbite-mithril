@@ -9,7 +9,7 @@ export const Badge = {
       class: className,
       color = "info", // "blue" | "cyan" | "dark" | "failure" | "gray" | "green" | "indigo" | "info" | "light" | "lime" | "pink" | "purple" | "red" | "success" | "teal" | "warning" | "yellow"
       href,
-      icon,
+      icon: Icon,
       size = "xs", // "xs" | "sm"
       theme: customTheme = {},
       ...props
@@ -25,14 +25,14 @@ export const Badge = {
               theme.root.base,
               theme.root.color[color],
               theme.root.size[size],
-              theme.icon[icon ? "on" : "off"],
-              icon && children.length > 0 ? "gap-1" : "",
+              theme.icon[Icon ? "on" : "off"],
+              Icon && children.length > 0 ? "gap-1" : "",
               className,
             ),
             ...props,
           },
           [
-            icon && m(icon, { "aria-hidden": true, class: theme.icon.size[size] }),
+            Icon && m(Icon, { "aria-hidden": true, class: theme.icon.size[size] }),
             children.length > 0 && m("span", children),
           ],
         ),
