@@ -9,10 +9,10 @@ export const avatarTheme = {
       gray: "ring-gray-500 dark:ring-gray-400",
       info: "ring-cyan-400 dark:ring-cyan-800",
       light: "ring-gray-300 dark:ring-gray-500",
+      pink: "ring-pink-500 dark:ring-pink-500",
       purple: "ring-purple-500 dark:ring-purple-600",
       success: "ring-green-500 dark:ring-green-500",
       warning: "ring-yellow-300 dark:ring-yellow-500",
-      pink: "ring-pink-500 dark:ring-pink-500",
     },
     img: {
       base: "rounded",
