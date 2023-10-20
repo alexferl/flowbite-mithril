@@ -9,6 +9,8 @@ import { helperTextTheme } from "./components/HelperText/theme.js";
 import { labelTheme } from "./components/Label/theme.js";
 import { navbarTheme } from "./components/Navbar/theme.js";
 import { radioTheme } from "./components/Radio/theme.js";
+import { rangeTheme } from "./components/Range/theme.js";
+import { selectTheme } from "./components/Select/theme.js";
 import { spinnerTheme } from "./components/Spinner/theme.js";
 import { tableTheme } from "./components/Table/theme.js";
 import { textInputTheme } from "./components/TextInput/theme.js";
@@ -28,6 +30,8 @@ export const theme = {
   label: labelTheme,
   navbar: navbarTheme,
   radio: radioTheme,
+  range: rangeTheme,
+  select: selectTheme,
   spinner: spinnerTheme,
   table: tableTheme,
   textarea: textareaTheme,

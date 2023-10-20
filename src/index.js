@@ -9,6 +9,8 @@ export * from "./components/HelperText/index.js";
 export * from "./components/Label/index.js";
 export * from "./components/Navbar/index.js";
 export * from "./components/Radio/index.js";
+export * from "./components/Range/index.js";
+export * from "./components/Select/index.js";
 export * from "./components/Spinner/index.js";
 export * from "./components/Table/index.js";
 export * from "./components/Textarea/index.js";

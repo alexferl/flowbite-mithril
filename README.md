@@ -44,10 +44,10 @@ Work in progress.
 |   Input    | ✅    |
 | File Input | 🚧   | Missing dropzone |
 |  Checkbox  | ✅    |
-|   Select   | ❌    |
+|   Select   | ✅    |
 |   Toggle   | ✅    |
 |  Textarea  | ✅    |
-|   Range    | ❌    |
+|   Range    | ✅    |
 |   Radio    | ✅    |
 
 
