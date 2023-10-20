@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { mergeDeep } from "../../helpers/merge-deep";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { avatarTheme } from "./theme.js";
 import { AvatarGroup } from "./AvatarGroup.js";
 import { AvatarGroupCounter } from "./AvatarGroupConter.js";

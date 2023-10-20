@@ -1,5 +1,5 @@
-import { cloneDeep } from "./clone-deep";
-import { isObject } from "./is-object";
+import { cloneDeep } from "./clone-deep.js";
+import { isObject } from "./is-object.js";
 
 export function mergeDeep(target, source) {
   if (isObject(source) && Object.keys(source).length === 0) {

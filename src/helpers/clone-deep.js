@@ -1,4 +1,4 @@
-import { isObject } from "./is-object";
+import { isObject } from "./is-object.js";
 
 export function cloneDeep(source) {
   if (!isObject(source)) {

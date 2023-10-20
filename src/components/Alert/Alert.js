@@ -1,6 +1,6 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
-import { mergeDeep } from "../../helpers/merge-deep";
+import { mergeDeep } from "../../helpers/merge-deep.js";
 import { alertTheme } from "./theme.js";
 import { CloseIcon } from "flowbite-icons-mithril/outline";
 
