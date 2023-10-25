@@ -7,7 +7,7 @@ export const avatarTheme = {
       dark: "ring-gray-800 dark:ring-gray-800",
       failure: "ring-red-500 dark:ring-red-700",
       gray: "ring-gray-500 dark:ring-gray-400",
-      info: "ring-cyan-400 dark:ring-cyan-800",
+      info: "ring-blue-400 dark:ring-blue-800",
       light: "ring-gray-300 dark:ring-gray-500",
       pink: "ring-pink-500 dark:ring-pink-500",
       purple: "ring-purple-500 dark:ring-purple-600",

@@ -11,7 +11,6 @@ export const Toggle = {
   view({ attrs, state }) {
     const {
       id,
-      checked,
       class: className,
       color = "blue", // "blue" | "cyan" | "dark" | "failure" | "gray" | "green" | "indigo" | "info" | "light" | "lime" | "pink" | "purple" | "red" | "success" | "teal" | "warning" | "yellow"
       size = "md", // "sm" | "md" | "lg"

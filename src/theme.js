@@ -4,6 +4,7 @@ import { badgeTheme } from "./components/Badge/theme.js";
 import { blockquoteTheme } from "./components/Blockquote/theme.js";
 import { buttonTheme, buttonGroupTheme } from "./components/Button/theme.js";
 import { checkboxTheme } from "./components/Checkbox/theme.js";
+import { dropdownTheme } from "./components/Dropdown/theme.js";
 import { fileInputTheme } from "./components/FileInput/theme.js";
 import { helperTextTheme } from "./components/HelperText/theme.js";
 import { labelTheme } from "./components/Label/theme.js";
@@ -26,6 +27,7 @@ export const theme = {
   button: buttonTheme,
   buttonGroup: buttonGroupTheme,
   checkbox: checkboxTheme,
+  dropdown: dropdownTheme,
   fileInput: fileInputTheme,
   helperText: helperTextTheme,
   label: labelTheme,

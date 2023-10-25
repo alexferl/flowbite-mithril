@@ -21,7 +21,7 @@ Work in progress.
 |     Card     | ❌    |
 |   Carousel   | ❌    |
 |  Datepicker  | ❌    |
-|   Dropdown   | ❌    |
+|   Dropdown   | ✅    |
 |    Footer    | ❌    |
 |     KDB      | ❌    |
 |  List group  | ✅    |

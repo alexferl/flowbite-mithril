@@ -3,7 +3,7 @@ export const spinnerTheme = {
   color: {
     failure: "fill-red-600",
     gray: "fill-gray-600",
-    info: "fill-cyan-600",
+    info: "fill-blue-600",
     pink: "fill-pink-600",
     purple: "fill-purple-600",
     success: "fill-green-500",

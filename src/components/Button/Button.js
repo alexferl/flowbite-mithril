@@ -2,8 +2,8 @@ import m from "mithril";
 import { twMerge } from "tailwind-merge";
 import { mergeDeep } from "../../helpers/merge-deep.js";
 import { buttonGroupTheme, buttonTheme } from "./theme.js";
-import { Spinner } from "../Spinner/Spinner.js";
 import { ButtonGroup } from "./ButtonGroup.js";
+import { Spinner } from "../Spinner/Spinner.js";
 
 export const ButtonComponent = {
   view({ attrs, children }) {
