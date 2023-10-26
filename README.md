@@ -11,7 +11,7 @@ Work in progress.
 ## Components
 |     Name     | Done | Notes                 |
 |:------------:|------|-----------------------|
-|  Accordion   | ❌    |
+|  Accordion   | ✅    |
 |    Alert     | ✅    |
 |    Avatar    | ✅    |
 |    Badge     | ✅    |

@@ -1,3 +1,4 @@
+import { accordionTheme } from "./components/Accordion/theme.js";
 import { alertTheme } from "./components/Alert/theme.js";
 import { avatarTheme } from "./components/Avatar/theme.js";
 import { badgeTheme } from "./components/Badge/theme.js";
@@ -20,6 +21,7 @@ import { textareaTheme } from "./components/Textarea/theme.js";
 import { toggleTheme } from "./components/Toggle/theme.js";
 
 export const theme = {
+  accordion: accordionTheme,
   avatar: avatarTheme,
   alert: alertTheme,
   badge: badgeTheme,

@@ -1,3 +1,4 @@
+export * from "./components/Accordion/index.js";
 export * from "./components/Alert/index.js";
 export * from "./components/Avatar/index.js";
 export * from "./components/Badge/index.js";
