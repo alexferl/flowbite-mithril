@@ -1,7 +1,7 @@
 export const omit = (keys) => (obj) => {
   const result = {};
 
-  for (const key of obj) {
+  for (const key in obj) {
     if (keys.includes(key)) {
       return;
     }
