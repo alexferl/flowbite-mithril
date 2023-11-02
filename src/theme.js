@@ -3,6 +3,7 @@ import { alertTheme } from "./components/Alert/theme.js";
 import { avatarTheme } from "./components/Avatar/theme.js";
 import { badgeTheme } from "./components/Badge/theme.js";
 import { blockquoteTheme } from "./components/Blockquote/theme.js";
+import { breadcrumbTheme } from "./components/Breadcrumb/theme.js";
 import { buttonTheme, buttonGroupTheme } from "./components/Button/theme.js";
 import { checkboxTheme } from "./components/Checkbox/theme.js";
 import { dropdownTheme } from "./components/Dropdown/theme.js";
@@ -26,6 +27,7 @@ export const theme = {
   alert: alertTheme,
   badge: badgeTheme,
   blockquote: blockquoteTheme,
+  breadcrumb: breadcrumbTheme,
   button: buttonTheme,
   buttonGroup: buttonGroupTheme,
   checkbox: checkboxTheme,

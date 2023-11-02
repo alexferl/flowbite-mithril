@@ -3,6 +3,7 @@ export * from "./components/Alert/index.js";
 export * from "./components/Avatar/index.js";
 export * from "./components/Badge/index.js";
 export * from "./components/Blockquote/index.js";
+export * from "./components/Breadcrumb/index.js";
 export * from "./components/Button/index.js";
 export * from "./components/Checkbox/index.js";
 export * from "./components/Dropdown/index.js";

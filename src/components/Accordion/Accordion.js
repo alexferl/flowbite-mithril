@@ -22,7 +22,7 @@ export const AccordionComponent = {
       state.options.alwaysOpen = attrs.alwaysOpen;
     }
 
-    let items = [];
+    const items = [];
     children.map((child, index) => {
       const heading = child.children[0];
       const body = child.children[1];

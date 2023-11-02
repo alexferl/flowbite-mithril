@@ -15,7 +15,7 @@ Work in progress.
 |    Alert     | ✅    |
 |    Avatar    | ✅    |
 |    Badge     | ✅    |
-|  Breadcrumb  | ❌    |
+|  Breadcrumb  | ✅    |
 |    Button    | ✅    |
 | Button group | ✅    |
 |     Card     | ❌    |
