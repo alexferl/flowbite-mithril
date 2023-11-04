@@ -11,6 +11,7 @@ import { dropdownTheme } from "./components/Dropdown/theme.js";
 import { fileInputTheme } from "./components/FileInput/theme.js";
 import { footerTheme } from "./components/Footer/theme.js";
 import { helperTextTheme } from "./components/HelperText/theme.js";
+import { kbdTheme } from "./components/Kbd/theme.js";
 import { labelTheme } from "./components/Label/theme.js";
 import { listGroupTheme } from "./components/ListGroup/theme.js";
 import { navbarTheme } from "./components/Navbar/theme.js";
@@ -38,6 +39,7 @@ export const theme = {
   fileInput: fileInputTheme,
   footer: footerTheme,
   helperText: helperTextTheme,
+  kbd: kbdTheme,
   label: labelTheme,
   listGroup: listGroupTheme,
   navbar: navbarTheme,

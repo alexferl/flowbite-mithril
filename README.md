@@ -23,7 +23,7 @@ Work in progress.
 |  Datepicker  | ❌    |
 |   Dropdown   | ✅    |
 |    Footer    | ✅    |
-|     KBD      | ❌    |
+|     KBD      | ✅    |
 |  List group  | ✅    |
 |    Modal     | ❌    |
 |    Navbar    | ✅    |

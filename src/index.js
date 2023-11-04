@@ -11,6 +11,7 @@ export * from "./components/Dropdown/index.js";
 export * from "./components/FileInput/index.js";
 export * from "./components/Footer/index.js";
 export * from "./components/HelperText/index.js";
+export * from "./components/Kbd/index.js";
 export * from "./components/Label/index.js";
 export * from "./components/ListGroup/index.js";
 export * from "./components/Navbar/index.js";
