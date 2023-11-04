@@ -22,7 +22,7 @@ Work in progress.
 |   Carousel   | ❌    |
 |  Datepicker  | ❌    |
 |   Dropdown   | ✅    |
-|    Footer    | ❌    |
+|    Footer    | ✅    |
 |     KBD      | ❌    |
 |  List group  | ✅    |
 |    Modal     | ❌    |
