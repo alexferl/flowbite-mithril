@@ -5,6 +5,7 @@ export * from "./components/Badge/index.js";
 export * from "./components/Blockquote/index.js";
 export * from "./components/Breadcrumb/index.js";
 export * from "./components/Button/index.js";
+export * from "./components/Card/index.js";
 export * from "./components/Checkbox/index.js";
 export * from "./components/Dropdown/index.js";
 export * from "./components/FileInput/index.js";

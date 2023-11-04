@@ -18,7 +18,7 @@ Work in progress.
 |  Breadcrumb  | ✅    |
 |    Button    | ✅    |
 | Button group | ✅    |
-|     Card     | ❌    |
+|     Card     | ✅    |
 |   Carousel   | ❌    |
 |  Datepicker  | ❌    |
 |   Dropdown   | ✅    |
