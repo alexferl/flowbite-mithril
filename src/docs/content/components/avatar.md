@@ -24,11 +24,11 @@ const Component = {
   view: () =>
     m("div", { class: "flex flex-wrap gap-2" }, [
       m(Avatar, {
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
         rounded: true,
       }),
       m(Avatar, {
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
       }),
     ]),
 };
@@ -46,12 +46,12 @@ const Component = {
     m("div", { class: "flex flex-wrap gap-2" }, [
       m(Avatar, {
         bordered: true,
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
         rounded: true,
       }),
       m(Avatar, {
         bordered: true,
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
       }),
     ]),
 };
@@ -100,22 +100,22 @@ const Component = {
   view: () =>
     m("div", { class: "flex flex-wrap gap-2" }, [
       m(Avatar, {
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
         status: "online",
       }),
       m(Avatar, {
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
         rounded: true,
         status: "busy",
         statusPosition: "top-right"
       }),
       m(Avatar, {
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
         status: "offline",
         statusPosition: "bottom-right"
       }),
       m(Avatar, {
-        img: "/images/people/profile-picture-5.jpg",
+        img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
         rounded: true,
         status: "away",
         statusPosition: "bottom-right"
@@ -138,54 +138,54 @@ const Component = {
     m("div", { class: "flex flex-wrap gap-2" }, [
       m(Avatar.Group, [
         m(Avatar, {
-          img: "/images/people/profile-picture-1.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-1.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-2.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-2.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-3.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-3.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-4.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-4.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-5.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
           rounded: true,
           stacked: true,
         }),
       ]),
       m(Avatar.Group, [
         m(Avatar, {
-          img: "/images/people/profile-picture-1.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-1.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-2.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-2.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-3.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-3.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-4.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-4.jpg",
           rounded: true,
           stacked: true,
         }),
         m(Avatar, {
-          img: "/images/people/profile-picture-5.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
           rounded: true,
           stacked: true,
         }),
@@ -210,7 +210,7 @@ const Component = {
       m(
         Avatar,
         {
-          img: "/images/people/profile-picture-5.jpg",
+          img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
           rounded: true,
         },
         m("div", { class: "space-y-1 font-medium dark:text-white" }, [
@@ -239,7 +239,7 @@ const Component = {
         {
           label: m(Avatar, {
             alt: "User settings",
-            img: "/images/people/profile-picture-5.jpg",
+            img: "/flowbite-mithril/images/people/profile-picture-5.jpg",
             rounded: true,
           }),
           arrowIcon: false,
