@@ -11,12 +11,12 @@ import { Accordion as FlowbiteAccordion } from "flowbite";
 export const AccordionComponent = {
   accordion: null,
   options: {
-    alwaysOpen: true,
+    alwaysOpen: false,
     activeClasses: "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white",
     inactiveClasses: "text-gray-500 dark:text-gray-400",
   },
   oncreate({ state, attrs, children }) {
-    const { collapseAll = false, flush = false } = attrs;
+    const { id = "accordion", collapseAll = false, flush = false } = attrs;
 
     if (attrs.alwaysOpen) {
       state.options.alwaysOpen = attrs.alwaysOpen;
@@ -30,8 +30,8 @@ export const AccordionComponent = {
       heading.state.isOpen = child.state.isOpen;
       heading.state.flush = flush;
 
-      heading.dom.id = `accordion-heading-${index}`;
-      body.dom.id = `accordion-body-${index}`;
+      heading.dom.id = `${id}-heading-${index}`;
+      body.dom.id = `${id}-body-${index}`;
       if (collapseAll) {
         body.dom.className = twMerge(body.dom.className, "hidden");
       } else if (!child.state.isOpen) {
@@ -39,7 +39,7 @@ export const AccordionComponent = {
       }
 
       items.push({
-        id: `accordion-heading-${index}`,
+        id: `${id}-heading-${index}`,
         triggerEl: heading.dom,
         targetEl: body.dom,
         active: !collapseAll ? child.state.isOpen : false,
@@ -50,10 +50,17 @@ export const AccordionComponent = {
     // with the state values we just set
     m.redraw();
 
-    state.accordion = new FlowbiteAccordion(items, state.options);
+    state.accordion = new FlowbiteAccordion(id, items, state.options);
   },
   view({ attrs, children }) {
-    const { class: className, alwaysOpen = false, flush = false, theme: customTheme = {}, ...props } = attrs;
+    const {
+      class: className,
+      id = "accordion",
+      alwaysOpen = false,
+      flush = false,
+      theme: customTheme = {},
+      ...props
+    } = attrs;
     const theme = mergeDeep(accordionTheme.root, customTheme);
 
     const theirProps = removeOptionsProps(props);
@@ -61,6 +68,7 @@ export const AccordionComponent = {
     return m(
       "div",
       {
+        id: id,
         class: twMerge(theme.base, theme.flush[flush ? "on" : "off"], className),
         "data-accordion": alwaysOpen ? "open" : "collapse",
         ...theirProps,

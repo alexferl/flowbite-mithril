@@ -12,7 +12,7 @@ export const Alert = {
       color = "info", // "blue" | "cyan" | "dark" | "failure" | "gray" | "green" | "indigo" | "info" | "light" | "lime" | "pink" | "purple" | "red" | "success" | "teal" | "warning" | "yellow"
       icon: Icon,
       onDismiss,
-      rounded = true,
+      rounded = false,
       theme: customTheme = {},
       withBorderAccent = false,
       ...props
@@ -44,7 +44,7 @@ export const Alert = {
               onclick: onDismiss,
               type: "button",
             },
-            m(CloseIcon, { "aria-hidden": true, class: theme.closeButton.icon, size: "xs" }),
+            m(CloseIcon, { "aria-hidden": true, class: theme.closeButton.icon }),
           ),
       ]),
       additionalContent && m("div", additionalContent),

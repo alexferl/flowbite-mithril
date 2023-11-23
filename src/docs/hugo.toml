@@ -1,0 +1,21 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Flowbite Mithril"
+enableInlineShortcodes = true
+buildDrafts = true
+buildFuture = true
+publishDir = "../../docs"
+
+[params]
+homepage = "https://example.org"
+current_version = "0.0.0"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "github-dark"
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 6

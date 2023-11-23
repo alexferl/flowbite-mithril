@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 import { mergeDeep } from "../../helpers/merge-deep.js";
 import { avatarTheme } from "./theme.js";
 import { AvatarGroup } from "./AvatarGroup.js";
-import { AvatarGroupCounter } from "./AvatarGroupConter.js";
+import { AvatarGroupCounter } from "./AvatarGroupCounter.js";
 
 export const AvatarComponent = {
   view({ attrs, children }) {

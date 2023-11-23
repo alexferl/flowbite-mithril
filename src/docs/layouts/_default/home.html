@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+{{ partial "navbar" }}
+
+<div class="w-full px-4 mx-auto max-w-8xl">
+  <div class="lg:flex">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed inset-0 z-20 flex-none hidden h-full w-72 lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-48 lg:block" aria-labelledby="sidebar-label">
+      {{ partial "sidebar" . }}
+    </aside>
+
+    <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/60" id="sidebarBackdrop"></div>
+
+    <main id="content-wrapper" class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible">
+      <div class="flex w-full">
+
+        <!-- Main content -->
+        <div class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb:12 xl:pb-24 lg:pb-16">
+
+          <!-- Intro -->
+          <div class="pb-4 mb-8 border-b border-gray-200 dark:border-gray-800">
+
+            <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white" id="content">{{ .Title | markdownify }}</h1>
+            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400">{{ .Page.Params.Description | markdownify }}</p>
+          </div>
+
+          <div id="mainContent">
+
+            {{ .Content }}
+
+            <aside class="flex mt-6 mb-8 font-medium leading-6" aria-label="Previous and next page navigation">
+              {{ if isset .Page.Params "previous" }}
+              <a class="flex items-center justify-center mr-8 text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="{{ .Page.Params.PreviousLink | relURL }}"><svg class="w-3.5 h-3.5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+              </svg>{{ .Page.Params.Previous }}</a>
+              {{ end }}
+              {{ if isset .Page.Params "next" }}
+              <a class="flex items-center justify-center ml-auto text-right text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="{{ .Page.Params.NextLink | relURL }}">{{ .Page.Params.Next }}<svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg></a>
+              {{ end }}
+            </aside>
+
+          </div>
+        </div>
+
+        <!-- Table of content -->
+        <div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block">
+          {{ if (eq .Page.Params.toc true) }}
+          <div class="flex overflow-y-auto sticky top-28 flex-col justify-between pt-10 pb-6 h-[calc(100vh-5rem)]">
+            <div class="mb-8">
+              <h4 class="pl-2.5 mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">On this page</h4>
+              {{ .TableOfContents }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+{{ end }}

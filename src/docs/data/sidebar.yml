@@ -1,0 +1,28 @@
+- title: Getting started
+  slug: getting-started
+  pages:
+    - title: Quickstart
+
+- title: Components
+  slug: components
+  pages:
+    - title: Accordion
+    - title: Alert
+    - title: Avatar
+    - title: Badge
+    - title: Breadcrumb
+    - title: Button
+    - title: Button Group
+    - title: Card
+    - title: Dropdown
+    - title: Footer
+    - title: KBD
+    - title: List Group
+    - title: Navbar
+    - title: Spinner
+
+- title: Forms
+  slug: forms
+  pages:
+    - title: Input Field
+

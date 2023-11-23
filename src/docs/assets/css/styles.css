@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight > pre  {
+  @apply p-4
+}
+
+#TableOfContents > ul {
+  @apply overflow-x-hidden font-medium text-gray-500 dark:text-gray-400;
+}
+
+#TableOfContents > ul > li {
+  @apply py-2;
+}
+
+#TableOfContents > ul > li > a {
+  @apply block pl-2.5 font-medium border-l border-white duration-200 hover:text-gray-900 transition-none dark:hover:text-white hover:border-gray-300 after:content-['#'] after:text-blue-700 dark:after:text-blue-500 dark:border-gray-900 dark:hover:border-gray-700 after:ml-2 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-100;
+}
+
+#TableOfContents > ul > li > ul > li > a {
+  @apply pl-6 border-l border-white duration-200 hover:text-gray-900 transition-none dark:hover:text-white hover:border-gray-300 after:content-['#'] after:text-blue-700 dark:after:text-blue-500 dark:border-gray-900 dark:hover:border-gray-700 after:ml-2 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-100;
+}
+
+#TableOfContents > ul > li > ul {
+  @apply pt-2;
+}
+
+#TableOfContents > ul > li > ul > li {
+  @apply py-2;
+}
+
+#TableOfContents > ul > li > ul > li:last-of-type {
+  @apply pb-0;
+}
+
+.highlight div,
+.highlight pre {
+  @apply overflow-x-scroll;
+}
+
+#mainContent > h2 {
+  @apply mt-8 mb-4 text-2xl font-semibold dark:text-white;
+}
+
+#mainContent > h3,
+#mainContent > h4 {
+  @apply mt-8 mb-4 text-xl font-semibold dark:text-white;
+}
+
+#mainContent > p {
+  @apply mb-4 text-base font-normal text-gray-600 dark:text-gray-400;
+}
+
+#mainContent > p > a,
+#mainContent > ul > li > a,
+#mainContent > ol > li > a,
+#mainContent > ul > li > p > a,
+#mainContent > ol > li > p > a {
+  @apply font-medium text-gray-700 underline dark:text-gray-300 decoration-1 underline-offset-2 decoration-blue-600 dark:decoration-blue-500;
+}
+
+#mainContent > p > a:hover,
+#mainContent > ul > li > a:hover,
+#mainContent > ol > li > a:hover,
+#mainContent > ul > li > p > a:hover,
+#mainContent > ol > li > p > a:hover {
+  @apply text-gray-900 decoration-2 dark:text-white;
+}
+
+#mainContent > p > code,
+#mainContent > ul > li > code,
+#mainContent > ol > li > code {
+  @apply px-1 font-mono text-sm text-blue-600 break-all dark:text-blue-400;
+}
+
+#mainContent > ul {
+  list-style: disc;
+}
+
+#mainContent > ol {
+  list-style: decimal;
+}
+
+#mainContent p > strong {
+  @apply text-gray-900 dark:text-white;
+}
+
+#mainContent > ul,
+#mainContent > ol {
+  padding-left: 1rem;
+}
+
+#mainContent > ul > li,
+#mainContent > ol > li {
+  @apply mb-4 text-base font-normal text-gray-600 dark:text-gray-400;
+}

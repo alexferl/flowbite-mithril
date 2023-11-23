@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "header" . }}
+</head>
+{{ block "body_override" . }}
+
+<body class="dark:bg-gray-900 antialiased">
+{{ end }}
+
+{{ block "main" . }}
+{{ end }}
+
+{{ partial "footer" . }}
+{{ partial "scripts" . }}
+
+{{ block "footer" . }}
+{{ end }}
+</body>
+
+</html>

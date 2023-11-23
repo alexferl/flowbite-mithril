@@ -1,0 +1,16 @@
+{
+  "name": "hugo-flowbite",
+  "version": "0.0.0",
+  "description": "Starter files for Hugo with Flowbite",
+  "repository": "https://github.com/alexferl/hugo-flowbite",
+  "license": "MIT",
+  "scripts": {
+    "dev": "hugo server --disableFastRender",
+    "build": "hugo"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "flowbite": "^2.1.1",
+    "postcss-cli": "^10.1.0"
+  }
+}

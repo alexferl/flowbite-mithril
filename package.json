@@ -14,22 +14,31 @@
     "url": "https://github.com/alexferl/flowbite-mithril/issues"
   },
   "license": "MIT",
-  "main": "src/index.js",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/flowbite-mithril.umd.cjs",
+  "module": "./dist/flowbite-mithril.js",
   "exports": {
-    ".": "./src/index.js"
+    ".": {
+      "import": "./dist/flowbite-mithril.js",
+      "require": "./dist/flowbite-mithril.umd.cjs"
+    }
   },
   "scripts": {
+    "build": "vite build",
     "lint": "npx @biomejs/biome check .",
     "format": "npx @biomejs/biome format . --write"
   },
   "dependencies": {
-    "flowbite": "^1.6.6",
+    "flowbite": "^2.0.0",
     "flowbite-icons-mithril": "^0.5.0",
-    "tailwind-merge": "^1.14.0"
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.2.2"
+    "@biomejs/biome": "^1.3.3",
+    "vite": "^5.0.2"
   },
   "peerDependencies": {
     "mithril": "^2",
