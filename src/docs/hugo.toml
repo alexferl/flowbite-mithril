@@ -1,4 +1,4 @@
-baseURL = "https://alexferl.github.io"
+baseURL = "https://alexferl.github.io/flowbite-mithril"
 languageCode = "en-us"
 title = "Flowbite Mithril"
 enableInlineShortcodes = true
