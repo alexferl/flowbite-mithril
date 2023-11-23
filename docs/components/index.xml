@@ -89,17 +89,10 @@ Default buttons # Use this example to create a default button by using the &amp;
       <description></description>
     </item>
     <item>
-      <title>Dropdown</title>
+      <title>Footer</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/footer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dropdown</title>
-      <link>https://alexferl.github.io/flowbite-mithril/components/list-group/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://alexferl.github.io/flowbite-mithril/components/list-group/</guid>
       <description></description>
     </item>
     <item>
@@ -110,6 +103,13 @@ Default buttons # Use this example to create a default button by using the &amp;
       <description></description>
     </item>
     <item>
+      <title>List Group</title>
+      <link>https://alexferl.github.io/flowbite-mithril/components/list-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/components/list-group/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Navbar</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/navbar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -117,7 +117,7 @@ Default buttons # Use this example to create a default button by using the &amp;
       <description></description>
     </item>
     <item>
-      <title>Navbar</title>
+      <title>Spinner</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/spinner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/spinner/</guid>

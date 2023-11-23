@@ -29,11 +29,9 @@
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/dropdown/</loc>
   </url><url>
-    <loc>https://alexferl.github.io/flowbite-mithril/components/footer/</loc>
-  </url><url>
-    <loc>https://alexferl.github.io/flowbite-mithril/components/list-group/</loc>
-  </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/getting-started/quickstart/</loc>
+  </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/components/footer/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/forms/</loc>
   </url><url>
@@ -42,6 +40,8 @@
     <loc>https://alexferl.github.io/flowbite-mithril/forms/input-field/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/kbd/</loc>
+  </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/components/list-group/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/navbar/</loc>
   </url><url>

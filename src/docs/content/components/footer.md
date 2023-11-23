@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Dropdown
+title: Footer
 description:
 group: components
 toc: true

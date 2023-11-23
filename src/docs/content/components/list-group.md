@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Dropdown
+title: List Group
 description:
 group: components
 toc: true

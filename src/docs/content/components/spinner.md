@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Navbar
+title: Spinner
 description:
 group: components
 toc: true

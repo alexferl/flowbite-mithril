@@ -6,7 +6,7 @@ group: components
 toc: true
 
 previous: Button Group
-previousLink: components/button_group/
+previousLink: components/button-group/
 next: Footer
 nextLink: components/footer/
 ---
