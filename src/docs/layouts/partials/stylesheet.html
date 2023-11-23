@@ -5,4 +5,5 @@
 {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end -}}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+<script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
