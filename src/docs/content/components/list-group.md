@@ -6,7 +6,7 @@ group: components
 toc: true
 
 previous: KBD
-previousLink: components/kdb/
-next: List Group
-nextLink: components/list_group/
+previousLink: components/kbd/
+next: Navbar
+nextLink: components/navbar/
 ---

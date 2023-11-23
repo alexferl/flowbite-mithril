@@ -97,16 +97,16 @@ Default buttons # Use this example to create a default button by using the &amp;
     </item>
     <item>
       <title>Dropdown</title>
-      <link>https://alexferl.github.io/flowbite-mithril/components/kdb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://alexferl.github.io/flowbite-mithril/components/kdb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dropdown</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/list-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/list-group/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KBD</title>
+      <link>https://alexferl.github.io/flowbite-mithril/components/kbd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/components/kbd/</guid>
       <description></description>
     </item>
     <item>

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Dropdown
+title: KBD
 description:
 group: components
 toc: true
