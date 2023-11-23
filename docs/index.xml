@@ -2,140 +2,140 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hi, and welcome. on Flowbite Mithril</title>
-    <link>https://example.org/</link>
+    <link>https://alexferl.github.io/</link>
     <description>Recent content in Hi, and welcome. on Flowbite Mithril</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://alexferl.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accordion</title>
-      <link>https://example.org/components/accordion/</link>
+      <link>https://alexferl.github.io/components/accordion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/accordion/</guid>
+      <guid>https://alexferl.github.io/components/accordion/</guid>
       <description>The accordion component from Flowbite Mithril can be used to toggle the visibility of the content of each accordion panel tab by expanding the collapsing the trigger element based on multiple examples and styles.
 The reactivity and state is handled by Mithril and the components is built using the Tailwind CSS framework meaning that you can easily customize the styles and colors of the accordion.
 Default accordion # Use this example of the &amp;lt;Accordion&amp;gt; component and the &amp;lt;Accordion.</description>
     </item>
     <item>
       <title>Alert</title>
-      <link>https://example.org/components/alert/</link>
+      <link>https://alexferl.github.io/components/alert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/alert/</guid>
+      <guid>https://alexferl.github.io/components/alert/</guid>
       <description>The alert component can be used to show a contextual text to the user such as a success or error message after form validation inside an alert box where you can choose from multiple colors, sizes, and styles.
 The examples below are styled with Tailwind CSS and the reactivity is handled by Mithril and you can also add any type of content inside the alert box.
 Default alert # The default alert component is a simple alert box with a text inside it and you can use the color attribute to change the color of the alert box and the title attribute to add a title to the alert box.</description>
     </item>
     <item>
       <title>Avatar</title>
-      <link>https://example.org/components/avatar/</link>
+      <link>https://alexferl.github.io/components/avatar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/avatar/</guid>
+      <guid>https://alexferl.github.io/components/avatar/</guid>
       <description>The avatar component can be used as a visual identifier for a user profile on your website and you can use the examples from Flowbite to modify the styles and sizes of these components using the utility classes from Tailwind CSS.
 Default avatar # Here&amp;rsquo;s a default example of the Avatar component where you can use the img attribute to pass the image URL, the alt attribute to pass a description of the image for accessibility and the rounded attribute to make the avatar rounded.</description>
     </item>
     <item>
       <title>Badge</title>
-      <link>https://example.org/components/badge/</link>
+      <link>https://alexferl.github.io/components/badge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/badge/</guid>
+      <guid>https://alexferl.github.io/components/badge/</guid>
       <description>The badge component can be used to show text, labels, and counters inside a small box or circle element which can be placed inside paragraphs, buttons, dropdowns, menu items, and more.
 You can choose from multiple examples of badges based on the color, size, and icon and even use it as a link component by leveraging the properties from Mithril and classes from Tailwind CSS.
 Default badges # Here&amp;rsquo;s a list of default &amp;lt;Badge&amp;gt; component examples where you can use the color attribute to change the color of the badge based on contextual colors such as info, gray, success, and more.</description>
     </item>
     <item>
       <title>Banner</title>
-      <link>https://example.org/components/banner/</link>
+      <link>https://alexferl.github.io/components/banner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/banner/</guid>
+      <guid>https://alexferl.github.io/components/banner/</guid>
       <description></description>
     </item>
     <item>
       <title>Breadcrumb</title>
-      <link>https://example.org/components/breadcrumb/</link>
+      <link>https://alexferl.github.io/components/breadcrumb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/breadcrumb/</guid>
+      <guid>https://alexferl.github.io/components/breadcrumb/</guid>
       <description>The breadcrumb component can be used to indicate the current page&amp;rsquo;s location within a navigational hierarchy and you can choose from multiple examples, colors, and sizes built with Mithril and based on the utility classes from Tailwind CSS.
 Theme # To learn more about how to customize the appearance of components, please see the Theme docs.
 { &amp;#34;root&amp;#34;: { &amp;#34;base&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;list&amp;#34;: &amp;#34;flex items-center&amp;#34; }, &amp;#34;item&amp;#34;: { &amp;#34;base&amp;#34;: &amp;#34;group flex items-center&amp;#34;, &amp;#34;chevron&amp;#34;: &amp;#34;mx-1 h-3 w-3 text-gray-400 group-first:hidden md:mx-2&amp;#34;, &amp;#34;href&amp;#34;: { &amp;#34;off&amp;#34;: &amp;#34;flex items-center text-sm font-medium text-gray-500 dark:text-gray-400&amp;#34;, &amp;#34;on&amp;#34;: &amp;#34;flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white&amp;#34; }, &amp;#34;icon&amp;#34;: &amp;#34;mr-2 h-3 w-3&amp;#34; } } </description>
     </item>
     <item>
       <title>Button</title>
-      <link>https://example.org/components/button/</link>
+      <link>https://alexferl.github.io/components/button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/button/</guid>
+      <guid>https://alexferl.github.io/components/button/</guid>
       <description>The button component is a common UI component found on the web that allows users to trigger certain actions on your website such as submitting a form, navigating to a new page, or downloading a file.
 The examples from the Flowbite Mithril library allows you to customise the buttons with different colors, sizes, icons, and more. All examples are built with Mithril and Tailwind CSS.
 Default buttons # Use this example to create a default button by using the &amp;lt;Button&amp;gt; component and by adding the color attribute you can change the color of the button.</description>
     </item>
     <item>
       <title>Button Group</title>
-      <link>https://example.org/components/button-group/</link>
+      <link>https://alexferl.github.io/components/button-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/button-group/</guid>
+      <guid>https://alexferl.github.io/components/button-group/</guid>
       <description></description>
     </item>
     <item>
       <title>Card</title>
-      <link>https://example.org/components/card/</link>
+      <link>https://alexferl.github.io/components/card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/card/</guid>
+      <guid>https://alexferl.github.io/components/card/</guid>
       <description></description>
     </item>
     <item>
       <title>Dropdown</title>
-      <link>https://example.org/components/dropdown/</link>
+      <link>https://alexferl.github.io/components/dropdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/dropdown/</guid>
+      <guid>https://alexferl.github.io/components/dropdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Dropdown</title>
-      <link>https://example.org/components/footer/</link>
+      <link>https://alexferl.github.io/components/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/footer/</guid>
+      <guid>https://alexferl.github.io/components/footer/</guid>
       <description></description>
     </item>
     <item>
       <title>Dropdown</title>
-      <link>https://example.org/components/kdb/</link>
+      <link>https://alexferl.github.io/components/kdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/kdb/</guid>
+      <guid>https://alexferl.github.io/components/kdb/</guid>
       <description></description>
     </item>
     <item>
       <title>Dropdown</title>
-      <link>https://example.org/components/list-group/</link>
+      <link>https://alexferl.github.io/components/list-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/list-group/</guid>
+      <guid>https://alexferl.github.io/components/list-group/</guid>
       <description></description>
     </item>
     <item>
       <title>Flowbite - Quickstart</title>
-      <link>https://example.org/getting-started/quickstart/</link>
+      <link>https://alexferl.github.io/getting-started/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/getting-started/quickstart/</guid>
+      <guid>https://alexferl.github.io/getting-started/quickstart/</guid>
       <description></description>
     </item>
     <item>
       <title>Input Field</title>
-      <link>https://example.org/forms/input-field/</link>
+      <link>https://alexferl.github.io/forms/input-field/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/forms/input-field/</guid>
+      <guid>https://alexferl.github.io/forms/input-field/</guid>
       <description></description>
     </item>
     <item>
       <title>Navbar</title>
-      <link>https://example.org/components/navbar/</link>
+      <link>https://alexferl.github.io/components/navbar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/navbar/</guid>
+      <guid>https://alexferl.github.io/components/navbar/</guid>
       <description></description>
     </item>
     <item>
       <title>Navbar</title>
-      <link>https://example.org/components/spinner/</link>
+      <link>https://alexferl.github.io/components/spinner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/components/spinner/</guid>
+      <guid>https://alexferl.github.io/components/spinner/</guid>
       <description></description>
     </item>
   </channel>
