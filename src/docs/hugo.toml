@@ -5,6 +5,7 @@ enableInlineShortcodes = true
 buildDrafts = true
 buildFuture = true
 publishDir = "../../docs"
+disableKinds = [ "taxonomy" ]
 
 [params]
 homepage = "https://example.org"

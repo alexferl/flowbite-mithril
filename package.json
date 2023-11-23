@@ -32,7 +32,7 @@
     "format": "npx @biomejs/biome format . --write"
   },
   "dependencies": {
-    "flowbite": "^2.0.0",
+    "flowbite": "^2.2.0",
     "flowbite-icons-mithril": "^0.5.0",
     "tailwind-merge": "^2.0.0"
   },
