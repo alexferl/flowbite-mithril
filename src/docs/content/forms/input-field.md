@@ -5,8 +5,8 @@ description: Get started with a collection of input fields built with Tailwind C
 group: forms
 toc: true
 
-prev: Spinner
-prevLink: components/spinner/
+previous: Spinner
+previousLink: components/spinner/
 ---
 
 The input field is an important part of the form element that can be used to create interactive controls to accept data from the user based on multiple input types, such as text, email, number, password, URL, phone number, and more.
