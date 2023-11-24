@@ -1,6 +1,6 @@
 {
   "name": "flowbite-mithril",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Mithril components built for Flowbite and Tailwind CSS",
   "keywords": [
     "flowbite",
