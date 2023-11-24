@@ -29,7 +29,7 @@ export const Toggle = {
       if (!disabled) {
         toggle();
         if (onClick) {
-            onClick();
+          onClick();
         }
       }
     };

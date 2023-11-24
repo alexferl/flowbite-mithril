@@ -12,5 +12,8 @@
   "formatter": {
     "indentStyle": "space",
     "lineWidth": 120
+  },
+  "files": {
+    "ignore": ["dist", "docs", "src/docs"]
   }
 }
