@@ -17,6 +17,7 @@ export const Toggle = {
       disabled,
       label,
       name,
+      onclick: onClick,
       theme: customTheme = {},
       ...props
     } = attrs;
@@ -27,6 +28,9 @@ export const Toggle = {
     const handleClick = () => {
       if (!disabled) {
         toggle();
+        if (onClick) {
+            onClick();
+        }
       }
     };
 
