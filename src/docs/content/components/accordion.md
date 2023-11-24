@@ -5,6 +5,8 @@ description: Use the accordion component and its options to expand and collapse 
 group: components
 toc: true
 
+previous: Theme
+previousLink: customize/theme/
 next: Alert
 nextLink: components/alert/
 ---
