@@ -97,6 +97,14 @@
         </ul>
       </li>
       <li class="mt-8">
+        <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Customize</h5>
+        <ul class="py-1 list-unstyled fw-normal small">
+          <li>
+            <a href="/flowbite-mithril/customize/theme/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Theme </a>
+          </li>
+        </ul>
+      </li>
+      <li class="mt-8">
         <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Components</h5>
         <ul class="py-1 list-unstyled fw-normal small">
           <li>
@@ -175,6 +183,143 @@
           <div id="mainContent">
 
             <p>The breadcrumb component can be used to indicate the current page&rsquo;s location within a navigational hierarchy and you can choose from multiple examples, colors, and sizes built with Mithril and based on the utility classes from Tailwind CSS.</p>
+<h2 class="relative group">Default breadcrumb
+<span id="default-breadcrumb" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#default-breadcrumb" aria-label="Link to this section: Default breadcrumb">#</a></h2>
+<p>Use the <code>&lt;Breadcrumb&gt;</code> component and the child <code>&lt;Breadcrumb.Item&gt;</code> components to create and indicate a series of page structure and URLs to help the user navigate through the website.</p>
+<p>You can use the <code>href</code> attribute to make the breadcrumb items clickable and the <code>icon</code> attribute to add an icon to the breadcrumb item such as for the homepage.</p>
+<div class="code-example mt-8">
+  
+  <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
+    <div class="grid grid-cols-2">
+      
+      <a href="https://github.com/alexferl/flowbite-mithril/blob/master/src/docs/content/components/breadcrumb.md" rel="noreferrer" target="_blank" class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-3 py-2 text-xs text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 dark:text-gray-400 focus:text-primary-700 dark:focus:text-white dark:hover:text-white dark:bg-transparent dark:border-gray-600 dark:hover:border-gray-700 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg dark:!bg-gray-900 w-fit hover:text-primary-600 gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-4 h-4"><path fill="currentColor" fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.069-.6.069-.6a2.084 2.084 0 0 1 1.519 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.267-.973.629-1.325-2.2-.25-4.515-1.1-4.515-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.179.572.681.475A9.91 9.91 0 0 0 10 .333Z" clip-rule="evenodd"></path>
+        </svg>Edit on GitHub
+      </a>
+      
+    </div>
+  </div>
+  <div class="code-preview-wrapper">
+    <div class="flex p-0 bg-white border-gray-200 bg-gradient-to-r code-preview dark:bg-gray-900 border-x dark:border-gray-600">
+      <div class="code-responsive-wrapper w-full">
+        <div id="example-default" class="mx-auto w-full bg-white bg-gradient-to-r p-2 dark:bg-gray-900 sm:p-6">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Breadcrumb } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { HomeIcon } from <span style="color:#a5d6ff">&#34;flowbite-icons-mithril/solid&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> Component <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  view<span style="color:#ff7b72;font-weight:bold">:</span> () =&gt;
+</span></span><span style="display:flex;"><span>    m(Breadcrumb, { <span style="color:#a5d6ff">&#34;aria-label&#34;</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Default breadcrumb example&#34;</span> }, [
+</span></span><span style="display:flex;"><span>      m(Breadcrumb.Item, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span>, icon<span style="color:#ff7b72;font-weight:bold">:</span> HomeIcon }, <span style="color:#a5d6ff">&#34;Home&#34;</span>),
+</span></span><span style="display:flex;"><span>      m(Breadcrumb.Item, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span> }, <span style="color:#a5d6ff">&#34;Projects&#34;</span>),
+</span></span><span style="display:flex;"><span>      m(Breadcrumb.Item, <span style="color:#a5d6ff">&#34;Flowbite Mithril&#34;</span>),
+</span></span><span style="display:flex;"><span>    ]),
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  var root = document.getElementById("example-default")
+
+  
+import { Breadcrumb } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
+import { HomeIcon } from "https://unpkg.com/flowbite-icons-mithril@0.6.0/dist/solid/index.js";
+
+const Component = {
+  view: () =>
+    m(Breadcrumb, { "aria-label": "Default breadcrumb example" }, [
+      m(Breadcrumb.Item, { href: "#", icon: HomeIcon }, "Home"),
+      m(Breadcrumb.Item, { href: "#" }, "Projects"),
+      m(Breadcrumb.Item, "Flowbite Mithril"),
+    ]),
+};
+
+
+  m.mount(root, Component)
+</script>
+
+
+<h2 class="relative group">Background color
+<span id="background-color" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#background-color" aria-label="Link to this section: Background color">#</a></h2>
+<p>You can add a solid background style to the breadcrumb component by adding the <code>bg-gray-50</code> class to the component from Tailwind CSS.</p>
+<div class="code-example mt-8">
+  
+  <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
+    <div class="grid grid-cols-2">
+      
+      <a href="https://github.com/alexferl/flowbite-mithril/blob/master/src/docs/content/components/breadcrumb.md" rel="noreferrer" target="_blank" class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-3 py-2 text-xs text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 dark:text-gray-400 focus:text-primary-700 dark:focus:text-white dark:hover:text-white dark:bg-transparent dark:border-gray-600 dark:hover:border-gray-700 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg dark:!bg-gray-900 w-fit hover:text-primary-600 gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-4 h-4"><path fill="currentColor" fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.069-.6.069-.6a2.084 2.084 0 0 1 1.519 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.267-.973.629-1.325-2.2-.25-4.515-1.1-4.515-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.179.572.681.475A9.91 9.91 0 0 0 10 .333Z" clip-rule="evenodd"></path>
+        </svg>Edit on GitHub
+      </a>
+      
+    </div>
+  </div>
+  <div class="code-preview-wrapper">
+    <div class="flex p-0 bg-white border-gray-200 bg-gradient-to-r code-preview dark:bg-gray-900 border-x dark:border-gray-600">
+      <div class="code-responsive-wrapper w-full">
+        <div id="example-color" class="mx-auto w-full bg-white bg-gradient-to-r p-2 dark:bg-gray-900 sm:p-6">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Breadcrumb } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { HomeIcon } from <span style="color:#a5d6ff">&#34;flowbite-icons-mithril/solid&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> Component <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  view<span style="color:#ff7b72;font-weight:bold">:</span> () =&gt;
+</span></span><span style="display:flex;"><span>    m(
+</span></span><span style="display:flex;"><span>      Breadcrumb,
+</span></span><span style="display:flex;"><span>      { <span style="color:#a5d6ff">&#34;aria-label&#34;</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Solid background breadcrumb example&#34;</span>, <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;bg-gray-50 px-5 py-3 dark:bg-gray-800&#34;</span> },
+</span></span><span style="display:flex;"><span>      [
+</span></span><span style="display:flex;"><span>        m(Breadcrumb.Item, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span>, icon<span style="color:#ff7b72;font-weight:bold">:</span> HomeIcon }, <span style="color:#a5d6ff">&#34;Home&#34;</span>),
+</span></span><span style="display:flex;"><span>        m(Breadcrumb.Item, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span> }, <span style="color:#a5d6ff">&#34;Projects&#34;</span>),
+</span></span><span style="display:flex;"><span>        m(Breadcrumb.Item, <span style="color:#a5d6ff">&#34;Flowbite Mithril&#34;</span>),
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  var root = document.getElementById("example-color")
+
+  
+import { Breadcrumb } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
+import { HomeIcon } from "https://unpkg.com/flowbite-icons-mithril@0.6.0/dist/solid/index.js";
+
+const Component = {
+  view: () =>
+    m(
+      Breadcrumb,
+      { "aria-label": "Solid background breadcrumb example", class: "bg-gray-50 px-5 py-3 dark:bg-gray-800" },
+      [
+        m(Breadcrumb.Item, { href: "#", icon: HomeIcon }, "Home"),
+        m(Breadcrumb.Item, { href: "#" }, "Projects"),
+        m(Breadcrumb.Item, "Flowbite Mithril"),
+      ],
+    ),
+};
+
+
+  m.mount(root, Component)
+</script>
+
+
 <h2 class="relative group">Theme
 <span id="theme" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#theme" aria-label="Link to this section: Theme">#</a></h2>
 <p>To learn more about how to customize the appearance of components, please see the <a href="https://www.flowbite-react.com/docs/customize/theme">Theme docs</a>.</p>
@@ -231,6 +376,8 @@
               <h4 class="pl-2.5 mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">On this page</h4>
               <nav id="TableOfContents">
   <ul>
+    <li><a href="#default-breadcrumb">Default breadcrumb</a></li>
+    <li><a href="#background-color">Background color</a></li>
     <li><a href="#theme">Theme</a></li>
   </ul>
 </nav>

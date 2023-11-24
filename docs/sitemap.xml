@@ -3,7 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://alexferl.github.io/flowbite-mithril/</loc>
-    <lastmod>2023-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/accordion/</loc>
   </url><url>
@@ -25,9 +24,9 @@
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/</loc>
   </url><url>
-    <loc>https://alexferl.github.io/flowbite-mithril/components/dropdown/</loc>
+    <loc>https://alexferl.github.io/flowbite-mithril/customize/</loc>
   </url><url>
-    <loc>https://alexferl.github.io/flowbite-mithril/getting-started/quickstart/</loc>
+    <loc>https://alexferl.github.io/flowbite-mithril/components/dropdown/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/footer/</loc>
   </url><url>
@@ -43,6 +42,10 @@
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/navbar/</loc>
   </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/getting-started/quickstart/</loc>
+  </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/spinner/</loc>
+  </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/customize/theme/</loc>
   </url>
 </urlset>

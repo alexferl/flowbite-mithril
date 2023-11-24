@@ -55,8 +55,8 @@ Default badges # Here&amp;rsquo;s a list of default &amp;lt;Badge&amp;gt; compon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/breadcrumb/</guid>
       <description>The breadcrumb component can be used to indicate the current page&amp;rsquo;s location within a navigational hierarchy and you can choose from multiple examples, colors, and sizes built with Mithril and based on the utility classes from Tailwind CSS.
-Theme # To learn more about how to customize the appearance of components, please see the Theme docs.
-{ &amp;#34;root&amp;#34;: { &amp;#34;base&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;list&amp;#34;: &amp;#34;flex items-center&amp;#34; }, &amp;#34;item&amp;#34;: { &amp;#34;base&amp;#34;: &amp;#34;group flex items-center&amp;#34;, &amp;#34;chevron&amp;#34;: &amp;#34;mx-1 h-3 w-3 text-gray-400 group-first:hidden md:mx-2&amp;#34;, &amp;#34;href&amp;#34;: { &amp;#34;off&amp;#34;: &amp;#34;flex items-center text-sm font-medium text-gray-500 dark:text-gray-400&amp;#34;, &amp;#34;on&amp;#34;: &amp;#34;flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white&amp;#34; }, &amp;#34;icon&amp;#34;: &amp;#34;mr-2 h-3 w-3&amp;#34; } } </description>
+Default breadcrumb # Use the &amp;lt;Breadcrumb&amp;gt; component and the child &amp;lt;Breadcrumb.Item&amp;gt; components to create and indicate a series of page structure and URLs to help the user navigate through the website.
+You can use the href attribute to make the breadcrumb items clickable and the icon attribute to add an icon to the breadcrumb item such as for the homepage.</description>
     </item>
     <item>
       <title>Button</title>
@@ -72,56 +72,72 @@ Default buttons # Use this example to create a default button by using the &amp;
       <link>https://alexferl.github.io/flowbite-mithril/components/button-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/button-group/</guid>
-      <description></description>
+      <description>The button group component from Flowbite Mithril can be used to stack multiple button elements and group them visually together. It can often be used to create a navigation menu or a toolbar.
+Choose from multiple examples and you can update properties such as the color, size, and appearance using the attributes from Mithril and utility classes from Tailwind CSS.
+Default button group # Use this example of the &amp;lt;Button.Group&amp;gt; component by adding the Button component as a child element and stack them together.</description>
     </item>
     <item>
       <title>Card</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/card/</guid>
-      <description></description>
+      <description>The card component can be used to show a wide variety of content such as previews of blog posts, user profiles, pricing plans, and more. Choose from one of the many examples built with Mithril and the utility classes from Tailwind CSS.
+Default card # Use this example to show a simple card component with a title and description and apply the href attribute to the &amp;lt;Card&amp;gt; component to set a hyperlink on the card.</description>
     </item>
     <item>
       <title>Dropdown</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/dropdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/dropdown/</guid>
-      <description></description>
+      <description>The dropdown component is a UI component built with Mithril that allows you to show a list of items when clicking on a trigger element (i.e. a button) that you can use to build dropdown menus, lists, and more.
+The default styles are built with the utility classes from Tailwind CSS and you can use the custom attributes from Mithril to customize the behaviour and positioning of the dropdowns.
+Default dropdown # Edit on GitHub import { Dropdown } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(Dropdown, { label: &amp;#34;Dropdown button&amp;#34;, dismissOnClick: false }, [ m(Dropdown.</description>
     </item>
     <item>
       <title>Footer</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/footer/</guid>
-      <description></description>
+      <description>The footer component is an important section of a website where you should provide content such as sitemap links, copyright text, logo of your brand, social media account links, and more.
+Get started with the examples from Flowbite Mithril based on multiple styles, sizes, and colors by using Mithril components and the utility classes from Tailwind CSS.
+Default footer # Edit on GitHub import { Footer } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(Footer, { container: true }, [ m(Footer.</description>
     </item>
     <item>
       <title>KBD</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/kbd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/kbd/</guid>
-      <description></description>
+      <description>The KBD (Keyboard) component can be used to indicate a textual user input from the keyboard inside other elements such as in text, tables, cards, and more.
+Use the semantic &amp;lt;Kbd&amp;gt; keyboard input tag to use the default monospace font which is best suited for representing input keys.
+Default KBD # Here’s a list of KBD components that you can use inside any other element.
+Edit on GitHub import { Kbd } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex flex-wrap gap-1&amp;#34; }, [ m(Kbd, &amp;#34;Shift&amp;#34;), m(Kbd, &amp;#34;Ctrl&amp;#34;), m(Kbd, &amp;#34;Tab&amp;#34;), m(Kbd, &amp;#34;Caps Lock&amp;#34;), m(Kbd, &amp;#34;Esc&amp;#34;), m(Kbd, &amp;#34;Spacebar&amp;#34;), m(Kbd, &amp;#34;Enter&amp;#34;), ]), }; Theme # To learn more about how to customize the appearance of components, please see the Theme docs.</description>
     </item>
     <item>
       <title>List Group</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/list-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/list-group/</guid>
-      <description></description>
+      <description>The list group component can be used to show a list of items inside an unordered list for website navigation, show a list of items inside a card, and more.
+You can choose from one of the examples below based on various styles and options and you can customize the component with Mithril attributes and the classes from Tailwind CSS.
+Default list group # Use the default example to create a simple list of items inside a menu by using the ListGroup component with ListGroup.</description>
     </item>
     <item>
       <title>Navbar</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/navbar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/navbar/</guid>
-      <description></description>
+      <description>The navbar component is an important section of any website as it is the first section that appears on any page and it serves the purpose of allowing your users to navigate throughout your website.
+Generally, the navigation bar consists of the logo of your website, a list of menu items for navigation and other secondary elements such as buttons, dropdowns, and a hamburger menu for mobile devices.
+All interactivity and options are handled by using Mithril attributes and you can customise the appearance of the navbar using the classes from Tailwind CSS.</description>
     </item>
     <item>
       <title>Spinner</title>
       <link>https://alexferl.github.io/flowbite-mithril/components/spinner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/components/spinner/</guid>
-      <description></description>
+      <description>The spinner component should be used to indicate a loading status of the content that you&amp;rsquo;re fetching from your database and you can choose from multiple styles, colors, sizes, and animations based on Mithril and Tailwind CSS.
+Default spinner # Use the default spinner element by adding the &amp;lt;Spinner&amp;gt; Mithril component inside your code and integrate the aria-label attribute to allow screen readers parse the component for accessibility.
+Edit on GitHub import { Spinner } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(Spinner, { &amp;#34;aria-label&amp;#34;: &amp;#34;Default status example&amp;#34; }), }; Theme # To learn more about how to customize the appearance of components, please see the Theme docs.</description>
     </item>
   </channel>
 </rss>

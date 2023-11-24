@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="The navbar component can be used to show a list of navigation links positioned on the top side of your page based on multiple layouts, sizes, and dropdowns">
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.120.3">
 
@@ -97,6 +97,14 @@
         </ul>
       </li>
       <li class="mt-8">
+        <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Customize</h5>
+        <ul class="py-1 list-unstyled fw-normal small">
+          <li>
+            <a href="/flowbite-mithril/customize/theme/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Theme </a>
+          </li>
+        </ul>
+      </li>
+      <li class="mt-8">
         <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Components</h5>
         <ul class="py-1 list-unstyled fw-normal small">
           <li>
@@ -169,12 +177,173 @@
           <div class="pb-4 mb-8 border-b border-gray-200 dark:border-gray-800">
 
             <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white" id="content">Navbar</h1>
-            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400"></p>
+            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400">The navbar component can be used to show a list of navigation links positioned on the top side of your page based on multiple layouts, sizes, and dropdowns</p>
           </div>
 
           <div id="mainContent">
 
-            
+            <p>The navbar component is an important section of any website as it is the first section that appears on any page and it serves the purpose of allowing your users to navigate throughout your website.</p>
+<p>Generally, the navigation bar consists of the logo of your website, a list of menu items for navigation and other secondary elements such as buttons, dropdowns, and a hamburger menu for mobile devices.</p>
+<p>All interactivity and options are handled by using Mithril attributes and you can customise the appearance of the navbar using the classes from Tailwind CSS.</p>
+<h2 class="relative group">Default navbar
+<span id="default-navbar" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#default-navbar" aria-label="Link to this section: Default navbar">#</a></h2>
+<p>Use the default navbar component to showcase the logo and a list of menu items with links to other pages of your website by adding the <code>&lt;Navbar.Brand&gt;</code> and <code>&lt;Navbar.Link&gt;</code> components inside the <code>&lt;Navbar&gt;</code> component.</p>
+<p>On mobile device the navigation bar will be collapsed and you will be able to use the hamburger menu to toggle the menu items by adding the <code>&lt;Navbar.Toggle&gt;</code> component.</p>
+<div class="code-example mt-8">
+  
+  <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
+    <div class="grid grid-cols-2">
+      
+      <a href="https://github.com/alexferl/flowbite-mithril/blob/master/src/docs/content/components/navbar.md" rel="noreferrer" target="_blank" class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-3 py-2 text-xs text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 dark:text-gray-400 focus:text-primary-700 dark:focus:text-white dark:hover:text-white dark:bg-transparent dark:border-gray-600 dark:hover:border-gray-700 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg dark:!bg-gray-900 w-fit hover:text-primary-600 gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-4 h-4"><path fill="currentColor" fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.069-.6.069-.6a2.084 2.084 0 0 1 1.519 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.267-.973.629-1.325-2.2-.25-4.515-1.1-4.515-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.179.572.681.475A9.91 9.91 0 0 0 10 .333Z" clip-rule="evenodd"></path>
+        </svg>Edit on GitHub
+      </a>
+      
+    </div>
+  </div>
+  <div class="code-preview-wrapper">
+    <div class="flex p-0 bg-white border-gray-200 bg-gradient-to-r code-preview dark:bg-gray-900 border-x dark:border-gray-600">
+      <div class="code-responsive-wrapper w-full">
+        <div id="example-default" class="mx-auto w-full bg-white bg-gradient-to-r p-2 dark:bg-gray-900 sm:p-6">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Navbar } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> Component <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  view<span style="color:#ff7b72;font-weight:bold">:</span> () =&gt;
+</span></span><span style="display:flex;"><span>    m(Navbar, { fluid<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#79c0ff">true</span>, rounded<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#79c0ff">true</span> }, [
+</span></span><span style="display:flex;"><span>      m(Navbar.Brand, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;https://alexferl.github.io/flowbite-mithril&#34;</span> }, [
+</span></span><span style="display:flex;"><span>        m(<span style="color:#a5d6ff">&#34;img&#34;</span>, {
+</span></span><span style="display:flex;"><span>          src<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;/flowbite-mithril/images/logo.svg&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;mr-3 h-6 sm:h-9&#34;</span>,
+</span></span><span style="display:flex;"><span>          alt<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Flowbite Mithril Logo&#34;</span>,
+</span></span><span style="display:flex;"><span>        }),
+</span></span><span style="display:flex;"><span>        m(
+</span></span><span style="display:flex;"><span>          <span style="color:#a5d6ff">&#34;span&#34;</span>,
+</span></span><span style="display:flex;"><span>          { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;self-center whitespace-nowrap text-xl font-semibold dark:text-white&#34;</span> },
+</span></span><span style="display:flex;"><span>          <span style="color:#a5d6ff">&#34;Flowbite Mithril&#34;</span>,
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>      ]),
+</span></span><span style="display:flex;"><span>      m(Navbar.Toggle),
+</span></span><span style="display:flex;"><span>      m(Navbar.Collapse, [
+</span></span><span style="display:flex;"><span>        m(Navbar.Link, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span>, active<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#79c0ff">true</span> }, <span style="color:#a5d6ff">&#34;Home&#34;</span>),
+</span></span><span style="display:flex;"><span>        m(Navbar.Link, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span> }, <span style="color:#a5d6ff">&#34;About&#34;</span>),
+</span></span><span style="display:flex;"><span>        m(Navbar.Link, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span> }, <span style="color:#a5d6ff">&#34;Services&#34;</span>),
+</span></span><span style="display:flex;"><span>        m(Navbar.Link, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span> }, <span style="color:#a5d6ff">&#34;Pricing&#34;</span>),
+</span></span><span style="display:flex;"><span>        m(Navbar.Link, { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;#&#34;</span> }, <span style="color:#a5d6ff">&#34;Contact&#34;</span>),
+</span></span><span style="display:flex;"><span>      ]),
+</span></span><span style="display:flex;"><span>    ]),
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  var root = document.getElementById("example-default")
+
+  
+import { Navbar } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
+
+const Component = {
+  view: () =>
+    m(Navbar, { fluid: true, rounded: true }, [
+      m(Navbar.Brand, { href: "https://alexferl.github.io/flowbite-mithril" }, [
+        m("img", {
+          src: "/flowbite-mithril/images/logo.svg",
+          class: "mr-3 h-6 sm:h-9",
+          alt: "Flowbite Mithril Logo",
+        }),
+        m(
+          "span",
+          { class: "self-center whitespace-nowrap text-xl font-semibold dark:text-white" },
+          "Flowbite Mithril",
+        ),
+      ]),
+      m(Navbar.Toggle),
+      m(Navbar.Collapse, [
+        m(Navbar.Link, { href: "#", active: true }, "Home"),
+        m(Navbar.Link, { href: "#" }, "About"),
+        m(Navbar.Link, { href: "#" }, "Services"),
+        m(Navbar.Link, { href: "#" }, "Pricing"),
+        m(Navbar.Link, { href: "#" }, "Contact"),
+      ]),
+    ]),
+};
+
+
+  m.mount(root, Component)
+</script>
+
+
+<h2 class="relative group">Theme
+<span id="theme" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#theme" aria-label="Link to this section: Theme">#</a></h2>
+<p>To learn more about how to customize the appearance of components, please see the <a href="https://www.flowbite-react.com/docs/customize/theme">Theme docs</a>.</p>
+<div class="code-example mt-8">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;root&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;bg-white px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;rounded&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;on&#34;</span>: <span style="color:#a5d6ff">&#34;rounded&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;off&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;bordered&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;on&#34;</span>: <span style="color:#a5d6ff">&#34;border&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;off&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;inner&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;mx-auto flex flex-wrap items-center justify-between&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;fluid&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;on&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;off&#34;</span>: <span style="color:#a5d6ff">&#34;container&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;brand&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;flex items-center&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;collapse&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;w-full md:block md:w-auto&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;list&#34;</span>: <span style="color:#a5d6ff">&#34;mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;hidden&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;on&#34;</span>: <span style="color:#a5d6ff">&#34;hidden&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;off&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;link&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;block py-2 pr-4 pl-3 md:p-0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;active&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;on&#34;</span>: <span style="color:#a5d6ff">&#34;bg-blue-700 text-white dark:text-white md:bg-transparent md:text-blue-700&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;off&#34;</span>: <span style="color:#a5d6ff">&#34;border-b border-gray-100 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;disabled&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;on&#34;</span>: <span style="color:#a5d6ff">&#34;text-gray-400 hover:cursor-not-allowed dark:text-gray-600&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;off&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;toggle&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;icon&#34;</span>: <span style="color:#a5d6ff">&#34;h-6 w-6 shrink-0&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
             <aside class="flex mt-6 mb-8 font-medium leading-6" aria-label="Previous and next page navigation">
               
@@ -198,7 +367,12 @@
           <div class="flex overflow-y-auto sticky top-28 flex-col justify-between pt-10 pb-6 h-[calc(100vh-5rem)]">
             <div class="mb-8">
               <h4 class="pl-2.5 mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">On this page</h4>
-              <nav id="TableOfContents"></nav>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#default-navbar">Default navbar</a></li>
+    <li><a href="#theme">Theme</a></li>
+  </ul>
+</nav>
             </div>
           </div>
           

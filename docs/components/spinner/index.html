@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="Indicate a loading status when fetching data by using the spinner component built with Mithril and animated with Tailwind CSS based on multiple colors and sizes">
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.120.3">
 
@@ -97,6 +97,14 @@
         </ul>
       </li>
       <li class="mt-8">
+        <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Customize</h5>
+        <ul class="py-1 list-unstyled fw-normal small">
+          <li>
+            <a href="/flowbite-mithril/customize/theme/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Theme </a>
+          </li>
+        </ul>
+      </li>
+      <li class="mt-8">
         <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Components</h5>
         <ul class="py-1 list-unstyled fw-normal small">
           <li>
@@ -169,12 +177,127 @@
           <div class="pb-4 mb-8 border-b border-gray-200 dark:border-gray-800">
 
             <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white" id="content">Spinner</h1>
-            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400"></p>
+            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400">Indicate a loading status when fetching data by using the spinner component built with Mithril and animated with Tailwind CSS based on multiple colors and sizes</p>
           </div>
 
           <div id="mainContent">
 
-            
+            <p>The spinner component should be used to indicate a loading status of the content that you&rsquo;re fetching from your database and you can choose from multiple styles, colors, sizes, and animations based on Mithril and Tailwind CSS.</p>
+<h2 class="relative group">Default spinner
+<span id="default-spinner" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#default-spinner" aria-label="Link to this section: Default spinner">#</a></h2>
+<p>Use the default spinner element by adding the <code>&lt;Spinner&gt;</code> Mithril component inside your code and integrate the <code>aria-label</code> attribute to allow screen readers parse the component for accessibility.</p>
+<div class="code-example mt-8">
+  
+  <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
+    <div class="grid grid-cols-2">
+      
+      <a href="https://github.com/alexferl/flowbite-mithril/blob/master/src/docs/content/components/spinner.md" rel="noreferrer" target="_blank" class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-3 py-2 text-xs text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 dark:text-gray-400 focus:text-primary-700 dark:focus:text-white dark:hover:text-white dark:bg-transparent dark:border-gray-600 dark:hover:border-gray-700 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg dark:!bg-gray-900 w-fit hover:text-primary-600 gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-4 h-4"><path fill="currentColor" fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.069-.6.069-.6a2.084 2.084 0 0 1 1.519 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.267-.973.629-1.325-2.2-.25-4.515-1.1-4.515-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.179.572.681.475A9.91 9.91 0 0 0 10 .333Z" clip-rule="evenodd"></path>
+        </svg>Edit on GitHub
+      </a>
+      
+    </div>
+  </div>
+  <div class="code-preview-wrapper">
+    <div class="flex p-0 bg-white border-gray-200 bg-gradient-to-r code-preview dark:bg-gray-900 border-x dark:border-gray-600">
+      <div class="code-responsive-wrapper w-full">
+        <div id="example-default" class="mx-auto w-full bg-white bg-gradient-to-r p-2 dark:bg-gray-900 sm:p-6">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Spinner } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> Component <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  view<span style="color:#ff7b72;font-weight:bold">:</span> () =&gt;
+</span></span><span style="display:flex;"><span>    m(Spinner, { <span style="color:#a5d6ff">&#34;aria-label&#34;</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Default status example&#34;</span> }),
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  var root = document.getElementById("example-default")
+
+  
+import { Spinner } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
+
+const Component = {
+  view: () =>
+    m(Spinner, { "aria-label": "Default status example" }),
+};
+
+
+  m.mount(root, Component)
+</script>
+
+
+<h2 class="relative group">Theme
+<span id="theme" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#theme" aria-label="Link to this section: Theme">#</a></h2>
+<p>To learn more about how to customize the appearance of components, please see the <a href="https://www.flowbite-react.com/docs/customize/theme">Theme docs</a>.</p>
+<div class="code-example mt-8">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;inline animate-spin text-gray-200&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;color&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;failure&#34;</span>: <span style="color:#a5d6ff">&#34;fill-red-600&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;gray&#34;</span>: <span style="color:#a5d6ff">&#34;fill-gray-600&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;info&#34;</span>: <span style="color:#a5d6ff">&#34;fill-blue-600&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;pink&#34;</span>: <span style="color:#a5d6ff">&#34;fill-pink-600&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;purple&#34;</span>: <span style="color:#a5d6ff">&#34;fill-purple-600&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;success&#34;</span>: <span style="color:#a5d6ff">&#34;fill-green-500&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;warning&#34;</span>: <span style="color:#a5d6ff">&#34;fill-yellow-400&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;light&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;off&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;dark:text-gray-600&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;color&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;failure&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;gray&#34;</span>: <span style="color:#a5d6ff">&#34;dark:fill-gray-300&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;info&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;pink&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;purple&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;success&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;warning&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;on&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;color&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;failure&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;gray&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;info&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;pink&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;purple&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;success&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;warning&#34;</span>: <span style="color:#a5d6ff">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;size&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;xs&#34;</span>: <span style="color:#a5d6ff">&#34;w-3 h-3&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;sm&#34;</span>: <span style="color:#a5d6ff">&#34;w-4 h-4&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;md&#34;</span>: <span style="color:#a5d6ff">&#34;w-6 h-6&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;lg&#34;</span>: <span style="color:#a5d6ff">&#34;w-8 h-8&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;xl&#34;</span>: <span style="color:#a5d6ff">&#34;w-10 h-10&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
             <aside class="flex mt-6 mb-8 font-medium leading-6" aria-label="Previous and next page navigation">
               
@@ -182,6 +305,10 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
               </svg>Navbar</a>
               
+              
+              <a class="flex items-center justify-center ml-auto text-right text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="/flowbite-mithril/forms/input-field/">File Input<svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg></a>
               
             </aside>
 
@@ -194,7 +321,12 @@
           <div class="flex overflow-y-auto sticky top-28 flex-col justify-between pt-10 pb-6 h-[calc(100vh-5rem)]">
             <div class="mb-8">
               <h4 class="pl-2.5 mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">On this page</h4>
-              <nav id="TableOfContents"></nav>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#default-spinner">Default spinner</a></li>
+    <li><a href="#theme">Theme</a></li>
+  </ul>
+</nav>
             </div>
           </div>
           
