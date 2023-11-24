@@ -17,7 +17,7 @@ The avatar component can be used as a visual identifier for a user profile on yo
 
 Here's a default example of the `Avatar` component where you can use the `img` attribute to pass the image URL, the `alt` attribute to pass a description of the image for accessibility and the `rounded` attribute to make the avatar rounded.
 
-{{< example id="default" >}}
+{{< example id="default" github="components/avatar.md" >}}
 import { Avatar } from "flowbite-mithril";
 
 const Component = {
@@ -38,7 +38,7 @@ const Component = {
 
 Use the `bordered` attribute to add a border style to the avatar.
 
-{{< example id="border" >}}
+{{< example id="border" github="components/avatar.md" >}}
 import { Avatar } from "flowbite-mithril";
 
 const Component = {
@@ -61,7 +61,7 @@ const Component = {
 
 If the user doesn't have an image you can use the `placeholder` attribute to show a placeholder image and you can still pass the `rounded` attribute to make the avatar rounded and other options.
 
-{{< example id="placeholder" >}}
+{{< example id="placeholder" github="components/avatar.md" >}}
 import { Avatar } from "flowbite-mithril";
 
 const Component = {
@@ -78,7 +78,7 @@ const Component = {
 
 Alternatively to the placeholder image you can use the `initials` attribute to show the user initials.
 
-{{< example id="initials" >}}
+{{< example id="initials" github="components/avatar.md" >}}
 import { Avatar } from "flowbite-mithril";
 
 const Component = {
@@ -93,7 +93,7 @@ const Component = {
 
 You can use the `status` attribute to show a dot indicator on the avatar and you can use the `statusPosition` attribute to change the position of the dot indicator.
 
-{{< example id="dot_indicator" >}}
+{{< example id="dot_indicator" github="components/avatar.md" >}}
 import { Avatar } from "flowbite-mithril";
 
 const Component = {
@@ -130,7 +130,7 @@ Stack multiple avatars together by using the `Avatar.Group` component and by pas
 
 The `Avatar.Counter` component can be used to show the total number of avatars in the group by passing the `total` prop and a link to the `href` prop to view all users.
 
-{{< example id="stacked" >}}
+{{< example id="stacked" github="components/avatar.md" >}}
 import { Avatar } from "flowbite-mithril";
 
 const Component = {
@@ -199,7 +199,7 @@ const Component = {
 
 Use this example to show an avatar with text (ie. user name, email, etc) by passing the custom markup inside the `Avatar` component. This is useful for admin dashboard interfaces while the user is logged in.
 
-{{< example id="with_text" >}}
+{{< example id="with_text" github="components/avatar.md" >}}
 import { Avatar } from "flowbite-mithril";
 
 const Component = {
@@ -226,7 +226,7 @@ const Component = {
 
 Use this example if you want to show a dropdown menu when clicking on the avatar component.
 
-{{< example id="dropdown" >}}
+{{< example id="dropdown" github="components/avatar.md" >}}
 import { Avatar, Dropdown } from "flowbite-mithril";
 
 const Component = {

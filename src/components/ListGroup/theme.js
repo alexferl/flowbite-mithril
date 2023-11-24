@@ -10,6 +10,10 @@ export const listGroupTheme = {
         off: "hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500",
         on: "bg-blue-700 text-white dark:bg-gray-800",
       },
+      disabled: {
+        off: "",
+        on: "hover:bg-gray-100 text-gray-900 hover:text-gray-900 focus:text-gray-900 bg-gray-100 cursor-not-allowed",
+      },
       href: {
         off: "",
         on: "",

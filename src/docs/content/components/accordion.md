@@ -17,7 +17,7 @@ The reactivity and state is handled by Mithril and the components is built using
 
 Use this example of the `<Accordion>` component and the `<Accordion.Panel>` and `<Accordion.Title>` subcomponents to create an accordion with multiple panels.
 
-{{< example id="default" >}}
+{{< example id="default" github="components/accordion.md" >}}
 import { Accordion } from "flowbite-mithril";
 
 export const Component = {

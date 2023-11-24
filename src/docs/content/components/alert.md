@@ -21,7 +21,7 @@ The default alert component is a simple alert box with a text inside it and you 
 
 Inside the `<Alert>` component you can add any type of content such as text, images, or other components as they will be considered children of the alert box.
 
-{{< example id="default" >}}
+{{< example id="default" github="components/alert.md" >}}
 import { Alert } from "flowbite-mithril";
 
 const Component = {
@@ -37,7 +37,7 @@ const Component = {
 
 Use the `icon` attribute to add an icon to the alert box and you can use any icon from the [Flowbite Icons Mithril](https://github.com/alexferl/flowbite-icons-mithril) library.
 
-{{< example id="icon" >}}
+{{< example id="icon" github="components/alert.md" >}}
 import { Alert } from "flowbite-mithril";
 import { InfoCircleIcon } from "flowbite-icons-mithril/solid";
 
@@ -54,7 +54,7 @@ const Component = {
 
 You can use the `onDismiss` attribute on the `<Alert>` component to add a dismiss button to the alert box by adding a function inside of it that will be called when the user clicks on the dismiss button.
 
-{{< example id="dismissible" >}}
+{{< example id="dismissible" github="components/alert.md" >}}
 import { Alert } from "flowbite-mithril";
 
 const Component = {
@@ -69,7 +69,7 @@ const Component = {
 ## Rounded alert
 
 To make the alert box rounded you can use the `rounded` attribute on the `<Alert>` component.
-{{< example id="rounded" >}}
+{{< example id="rounded" github="components/alert.md" >}}
 import { Alert } from "flowbite-mithril";
 
 const Component = {
@@ -85,7 +85,7 @@ const Component = {
 
 Add a border accent to the alert box by applying the `withBorderAccent` attribute on the `<Alert>` component.
 
-{{< example id="border" >}}
+{{< example id="border" github="components/alert.md" >}}
 import { Alert } from "flowbite-mithril";
 
 const Component = {

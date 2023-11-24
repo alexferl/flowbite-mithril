@@ -13,6 +13,48 @@ nextLink: components/button/
 
 The breadcrumb component can be used to indicate the current page's location within a navigational hierarchy and you can choose from multiple examples, colors, and sizes built with Mithril and based on the utility classes from Tailwind CSS.
 
+## Default breadcrumb
+
+Use the `<Breadcrumb>` component and the child `<Breadcrumb.Item>` components to create and indicate a series of page structure and URLs to help the user navigate through the website.
+
+You can use the `href` attribute to make the breadcrumb items clickable and the `icon` attribute to add an icon to the breadcrumb item such as for the homepage.
+
+{{< example id="default" github="components/breadcrumb.md" >}}
+import { Breadcrumb } from "flowbite-mithril";
+import { HomeIcon } from "flowbite-icons-mithril/solid";
+
+const Component = {
+  view: () =>
+    m(Breadcrumb, { "aria-label": "Default breadcrumb example" }, [
+      m(Breadcrumb.Item, { href: "#", icon: HomeIcon }, "Home"),
+      m(Breadcrumb.Item, { href: "#" }, "Projects"),
+      m(Breadcrumb.Item, "Flowbite Mithril"),
+    ]),
+};
+{{< /example >}}
+
+## Background color
+
+You can add a solid background style to the breadcrumb component by adding the `bg-gray-50` class to the component from Tailwind CSS.
+
+{{< example id="color" github="components/breadcrumb.md" >}}
+import { Breadcrumb } from "flowbite-mithril";
+import { HomeIcon } from "flowbite-icons-mithril/solid";
+
+const Component = {
+  view: () =>
+    m(
+      Breadcrumb,
+      { "aria-label": "Solid background breadcrumb example", class: "bg-gray-50 px-5 py-3 dark:bg-gray-800" },
+      [
+        m(Breadcrumb.Item, { href: "#", icon: HomeIcon }, "Home"),
+        m(Breadcrumb.Item, { href: "#" }, "Projects"),
+        m(Breadcrumb.Item, "Flowbite Mithril"),
+      ],
+    ),
+};
+{{< /example >}}
+
 ## Theme
 
 To learn more about how to customize the appearance of components, please see the [Theme docs](https://www.flowbite-react.com/docs/customize/theme).

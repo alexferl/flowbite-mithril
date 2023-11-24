@@ -19,7 +19,7 @@ You can choose from multiple examples of badges based on the color, size, and ic
 
 Here's a list of default `<Badge>` component examples where you can use the `color` attribute to change the color of the badge based on contextual colors such as info, gray, success, and more.
 
-{{< example id="default" >}}
+{{< example id="default" github="components/badge.md" >}}
 import { Badge } from "flowbite-mithril";
 
 const Component = {
@@ -41,7 +41,7 @@ const Component = {
 
 Use the badge as a link component by adding the `href` attribute and passing the URL as a value.
 
-{{< example id="link" >}}
+{{< example id="link" github="components/badge.md" >}}
 import { Badge } from "flowbite-mithril";
 
 const Component = {

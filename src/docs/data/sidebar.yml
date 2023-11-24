@@ -3,6 +3,11 @@
   pages:
     - title: Quickstart
 
+- title: Customize
+  slug: customize
+  pages:
+    - title: Theme
+
 - title: Components
   slug: components
   pages:
