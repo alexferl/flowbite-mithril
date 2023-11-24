@@ -41,14 +41,14 @@ Work in progress.
 ## Forms
 |    Name    | Done | Notes            |
 |:----------:|------|------------------|
-|   Input    | ✅    |
-| File Input | 🚧   | Missing dropzone |
 |  Checkbox  | ✅    |
-|   Select   | ✅    |
-|   Toggle   | ✅    |
-|  Textarea  | ✅    |
-|   Range    | ✅    |
+| File Input | 🚧   | Missing dropzone |
+|   Input    | ✅    |
 |   Radio    | ✅    |
+|   Range    | ✅    |
+|   Select   | ✅    |
+|  Textarea  | ✅    |
+|   Toggle   | ✅    |
 
 
 ## Typography
