@@ -11,6 +11,7 @@ export * from "./components/Dropdown/index.js";
 export * from "./components/FileInput/index.js";
 export * from "./components/Footer/index.js";
 export * from "./components/HelperText/index.js";
+export * from "./components/Input/index.js";
 export * from "./components/Kbd/index.js";
 export * from "./components/Label/index.js";
 export * from "./components/ListGroup/index.js";
@@ -21,7 +22,6 @@ export * from "./components/Select/index.js";
 export * from "./components/Spinner/index.js";
 export * from "./components/Table/index.js";
 export * from "./components/Textarea/index.js";
-export * from "./components/TextInput/index.js";
 export * from "./components/Toggle/index.js";
 
 export * from "./theme.js";

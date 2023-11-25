@@ -8,7 +8,7 @@ export const toggleTheme = {
     label: "ml-3 text-sm font-medium text-gray-900 dark:text-gray-300",
   },
   toggle: {
-    base: "toggle-bg rounded-full border group-focus:ring-4 group-focus:ring-cyan-500/25",
+    base: "toggle-bg rounded-full border group-focus:ring-4 group-focus:ring-blue-500/25",
     checked: {
       on: "after:translate-x-full after:border-white",
       off: "border-gray-200 bg-gray-200 dark:border-gray-600 dark:bg-gray-700",

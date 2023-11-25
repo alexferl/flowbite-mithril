@@ -29,5 +29,11 @@
 - title: Forms
   slug: forms
   pages:
-    - title: Input Field
-
+    - title: Checkbox
+    - title: File Input
+    - title: Input
+    - title: Radio
+    - title: Range
+    - title: Select
+    - title: Textarea
+    - title: Toggle

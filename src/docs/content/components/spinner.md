@@ -7,8 +7,8 @@ toc: true
 
 previous: Navbar
 previousLink: components/navbar/
-next: File Input
-nextLink: forms/input-field/
+next: Checkbox
+nextLink: forms/checkbox/
 ---
 
 The spinner component should be used to indicate a loading status of the content that you're fetching from your database and you can choose from multiple styles, colors, sizes, and animations based on Mithril and Tailwind CSS.

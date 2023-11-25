@@ -11,6 +11,7 @@ import { dropdownTheme } from "./components/Dropdown/theme.js";
 import { fileInputTheme } from "./components/FileInput/theme.js";
 import { footerTheme } from "./components/Footer/theme.js";
 import { helperTextTheme } from "./components/HelperText/theme.js";
+import { inputTheme } from "./components/Input/theme.js";
 import { kbdTheme } from "./components/Kbd/theme.js";
 import { labelTheme } from "./components/Label/theme.js";
 import { listGroupTheme } from "./components/ListGroup/theme.js";
@@ -20,7 +21,6 @@ import { rangeTheme } from "./components/Range/theme.js";
 import { selectTheme } from "./components/Select/theme.js";
 import { spinnerTheme } from "./components/Spinner/theme.js";
 import { tableTheme } from "./components/Table/theme.js";
-import { textInputTheme } from "./components/TextInput/theme.js";
 import { textareaTheme } from "./components/Textarea/theme.js";
 import { toggleTheme } from "./components/Toggle/theme.js";
 
@@ -39,6 +39,7 @@ export const theme = {
   fileInput: fileInputTheme,
   footer: footerTheme,
   helperText: helperTextTheme,
+  input: inputTheme,
   kbd: kbdTheme,
   label: labelTheme,
   listGroup: listGroupTheme,
@@ -49,6 +50,5 @@ export const theme = {
   spinner: spinnerTheme,
   table: tableTheme,
   textarea: textareaTheme,
-  textInput: textInputTheme,
   toggle: toggleTheme,
 };

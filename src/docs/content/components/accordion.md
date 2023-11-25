@@ -38,7 +38,7 @@ export const Component = {
             m.trust("&nbsp;"),
             " ",
             m(
-              "a",
+              m.route.Link,
               {
                 href: "https://flowbite.com/docs/getting-started/introduction/",
                 class: "text-blue-600 hover:underline dark:text-blue-500",
@@ -60,7 +60,7 @@ export const Component = {
           m("p", { class: "text-gray-500 dark:text-gray-400" }, [
             " Check out the ",
             m(
-              "a",
+              m.route.Link,
               { href: "https://flowbite.com/figma/", class: "text-blue-600 hover:underline dark:text-blue-500" },
               " Figma design system ",
             ),
@@ -86,7 +86,7 @@ export const Component = {
             m(
               "li",
               m(
-                "a",
+                m.route.Link,
                 { href: "https://flowbite.com/pro/", class: "text-blue-600 hover:underline dark:text-blue-500" },
                 " Flowbite Pro ",
               ),
@@ -94,7 +94,7 @@ export const Component = {
             m(
               "li",
               m(
-                "a",
+                m.route.Link,
                 {
                   href: "https://tailwindui.com/",
                   rel: "nofollow",

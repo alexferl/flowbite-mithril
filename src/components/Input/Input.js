@@ -1,10 +1,10 @@
 import m from "mithril";
 import { twMerge } from "tailwind-merge";
 import { mergeDeep } from "../../helpers/merge-deep.js";
-import { textInputTheme } from "./theme.js";
+import { inputTheme } from "./theme.js";
 import { HelperText } from "../HelperText/index.js";
 
-export const TextInput = {
+export const Input = {
   view({ attrs }) {
     const {
       addon,
@@ -18,7 +18,7 @@ export const TextInput = {
       theme: customTheme = {},
       ...props
     } = attrs;
-    const theme = mergeDeep(textInputTheme, customTheme);
+    const theme = mergeDeep(inputTheme, customTheme);
 
     return [
       m("div", { class: twMerge(theme.base, className) }, [

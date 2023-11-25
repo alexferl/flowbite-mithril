@@ -9040,7 +9040,7 @@ const Qs = {
       blue: "focus:ring-blue-600 dark:ring-offset-blue-700 dark:focus:ring-blue-700 text-blue-700",
       cyan: "focus:ring-cyan-600 dark:ring-offset-cyan-600 dark:focus:ring-cyan-600 text-cyan-600",
       dark: "focus:ring-gray-800 dark:ring-offset-gray-800 dark:focus:ring-gray-800 text-gray-800",
-      default: "focus:ring-cyan-600 dark:ring-offset-cyan-600 dark:focus:ring-cyan-600 text-cyan-600",
+      default: "focus:ring-blue-600 dark:ring-offset-blue-600 dark:focus:ring-blue-600 text-blue-600",
       failure: "focus:ring-red-900 dark:ring-offset-red-900 dark:focus:ring-red-900 text-red-900",
       gray: "focus:ring-gray-900 dark:ring-offset-gray-900 dark:focus:ring-gray-900 text-gray-900",
       green: "focus:ring-green-600 dark:ring-offset-green-600 dark:focus:ring-green-600 text-green-600",
@@ -9209,7 +9209,7 @@ const Qs = {
       },
       colors: {
         failure: "border-red-500 bg-red-50 text-red-900 placeholder-red-700 focus:border-red-500 focus:ring-red-500 dark:border-red-400 dark:bg-red-100 dark:focus:border-red-500 dark:focus:ring-red-500",
-        gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500 focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500",
+        gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500",
         info: "border-blue-500 bg-blue-50 text-blue-900 placeholder-blue-700 focus:border-blue-500 focus:ring-blue-500 dark:border-blue-400 dark:bg-blue-100 dark:focus:border-blue-500 dark:focus:ring-blue-500",
         success: "border-green-500 bg-green-50 text-green-900 placeholder-green-700 focus:border-green-500 focus:ring-green-500 dark:border-green-400 dark:bg-green-100 dark:focus:border-green-500 dark:focus:ring-green-500",
         warning: "border-yellow-500 bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:border-yellow-500 focus:ring-yellow-500 dark:border-yellow-400 dark:bg-yellow-100 dark:focus:border-yellow-500 dark:focus:ring-yellow-500"
@@ -9376,19 +9376,103 @@ const Qs = {
   LinkGroup: xl,
   Title: kl
 }), Bi = {
+  base: "flex",
+  addon: "inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-200 px-3 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-600 dark:text-gray-400",
+  field: {
+    base: "relative w-full",
+    icon: {
+      base: "pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3",
+      svg: "h-5 w-5 text-gray-500 dark:text-gray-400"
+    },
+    rightIcon: {
+      base: "pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3",
+      svg: "h-5 w-5 text-gray-500 dark:text-gray-400"
+    },
+    input: {
+      base: "block w-full border disabled:cursor-not-allowed disabled:opacity-50",
+      sizes: {
+        sm: "p-2 sm:text-xs",
+        md: "p-2.5 text-sm",
+        lg: "sm:text-md p-4"
+      },
+      colors: {
+        failure: "border-red-500 bg-red-50 text-red-900 placeholder-red-700 focus:border-red-500 focus:ring-red-500 dark:border-red-400 dark:bg-red-100 dark:focus:border-red-500 dark:focus:ring-red-500",
+        gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500",
+        info: "border-blue-500 bg-blue-50 text-blue-900 placeholder-blue-700 focus:border-blue-500 focus:ring-blue-500 dark:border-blue-400 dark:bg-blue-100 dark:focus:border-blue-500 dark:focus:ring-blue-500",
+        success: "border-green-500 bg-green-50 text-green-900 placeholder-green-700 focus:border-green-500 focus:ring-green-500 dark:border-green-400 dark:bg-green-100 dark:focus:border-green-500 dark:focus:ring-green-500",
+        warning: "border-yellow-500 bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:border-yellow-500 focus:ring-yellow-500 dark:border-yellow-400 dark:bg-yellow-100 dark:focus:border-yellow-500 dark:focus:ring-yellow-500"
+      },
+      withRightIcon: {
+        on: "pr-10",
+        off: ""
+      },
+      withIcon: {
+        on: "pl-10",
+        off: ""
+      },
+      withAddon: {
+        on: "rounded-r-lg",
+        off: "rounded-lg"
+      },
+      withShadow: {
+        on: "shadow-sm dark:shadow-sm-light",
+        off: ""
+      }
+    }
+  }
+}, Kl = {
+  view({ attrs: t }) {
+    const {
+      addon: e,
+      class: r,
+      color: n = "gray",
+      // "failure" | "gray" | "info" | "success" | "warning"
+      helperText: i,
+      icon: o,
+      rightIcon: a,
+      shadow: s,
+      sizing: c = "md",
+      // "sm" | "md" | "lg"
+      theme: f = {},
+      ...p
+    } = t, g = P(Bi, f);
+    return [
+      h("div", { class: I(g.base, r) }, [
+        e && h("span", { class: g.addon }, e),
+        h("div", { class: g.field.base }, [
+          o && h("div", { class: g.field.icon.base }, h(o, { class: g.field.icon.svg })),
+          a && h("div", { class: g.field.rightIcon.base }, h(a, { class: g.field.rightIcon.svg })),
+          h("input", {
+            class: I(
+              g.field.input.base,
+              g.field.input.colors[n],
+              g.field.input.sizes[c],
+              g.field.input.withIcon[o ? "on" : "off"],
+              g.field.input.withRightIcon[a ? "on" : "off"],
+              g.field.input.withAddon[e ? "on" : "off"],
+              g.field.input.withShadow[s ? "on" : "off"]
+            ),
+            ...p
+          })
+        ])
+      ]),
+      i && h(er, { color: n }, i)
+    ];
+  }
+}, qi = {
   root: {
     base: "px-2 py-1.5 mr-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500",
     icon: "inline-block"
   }
-}, Kl = {
+}, Xl = {
   view({ attrs: t, children: e }) {
-    const { class: r, icon: n, theme: i = {}, ...o } = t, a = P(Bi, i);
+    const { class: r, icon: n, theme: i = {}, ...o } = t, a = P(qi, i);
     return h("span", { class: I(a.root.base, r), ...o }, [
       n && h(n, { class: a.root.icon }),
       e
     ]);
   }
-}, qi = {
+}, Gi = {
   root: {
     base: "text-sm font-medium",
     disabled: "opacity-50",
@@ -9400,7 +9484,7 @@ const Qs = {
       warning: "text-yellow-500 dark:text-yellow-600"
     }
   }
-}, Xl = {
+}, Yl = {
   view({ attrs: t, children: e }) {
     const {
       class: r,
@@ -9410,7 +9494,7 @@ const Qs = {
       value: o,
       theme: a = {},
       ...s
-    } = t, c = P(qi, a);
+    } = t, c = P(Gi, a);
     return h(
       "label",
       {
@@ -9470,7 +9554,7 @@ const Qs = {
     const { class: r, theme: n = {}, ...i } = t, o = P(cn, n);
     return h("ul", { class: I(o.root.base, r), ...i }, e);
   }
-}, Yl = Object.assign(Il, { Item: El }), Fe = {
+}, Jl = Object.assign(Il, { Item: El }), Fe = {
   root: {
     base: "bg-white px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4",
     rounded: {
@@ -9580,21 +9664,21 @@ const Tl = {
       )
     );
   }
-}, Jl = Object.assign(zl, {
+}, Zl = Object.assign(zl, {
   Brand: Cl,
   Collapse: Al,
   Link: Tl,
   Toggle: Ll
-}), Gi = {
+}), Vi = {
   root: {
     base: "h-4 w-4 border border-gray-300 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:focus:bg-blue-600 dark:focus:ring-blue-600 text-blue-600"
   }
-}, Zl = {
+}, Ql = {
   view({ attrs: t, children: e }) {
-    const { class: r, theme: n = {}, ...i } = t, o = P(Gi, n);
+    const { class: r, theme: n = {}, ...i } = t, o = P(Vi, n);
     return h("input", { type: "radio", class: I(o.root.base, r), ...i }, e);
   }
-}, Vi = {
+}, Wi = {
   root: {
     base: "flex"
   },
@@ -9609,7 +9693,7 @@ const Tl = {
       }
     }
   }
-}, Ql = {
+}, ec = {
   view({ attrs: t }) {
     const {
       class: e,
@@ -9617,7 +9701,7 @@ const Tl = {
       // "sm" | "md" | "lg"
       theme: n = {},
       ...i
-    } = t, o = P(Vi, n);
+    } = t, o = P(Wi, n);
     return h(
       "div",
       { class: I(o.root.base, e) },
@@ -9628,7 +9712,7 @@ const Tl = {
       )
     );
   }
-}, Wi = {
+}, Fi = {
   base: "flex",
   addon: "inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-200 px-3 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-600 dark:text-gray-400",
   field: {
@@ -9658,14 +9742,14 @@ const Tl = {
       },
       colors: {
         failure: "border-red-500 bg-red-50 text-red-900 placeholder-red-700 focus:border-red-500 focus:ring-red-500 dark:border-red-400 dark:bg-red-100 dark:focus:border-red-500 dark:focus:ring-red-500",
-        gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500 focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500",
+        gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500",
         info: "border-blue-500 bg-blue-50 text-blue-900 placeholder-blue-700 focus:border-blue-500 focus:ring-blue-500 dark:border-blue-400 dark:bg-blue-100 dark:focus:border-blue-500 dark:focus:ring-blue-500",
         success: "border-green-500 bg-green-50 text-green-900 placeholder-green-700 focus:border-green-500 focus:ring-green-500 dark:border-green-400 dark:bg-green-100 dark:focus:border-green-500 dark:focus:ring-green-500",
         warning: "border-yellow-500 bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:border-yellow-500 focus:ring-yellow-500 dark:border-yellow-400 dark:bg-yellow-100 dark:focus:border-yellow-500 dark:focus:ring-yellow-500"
       }
     }
   }
-}, ec = {
+}, tc = {
   view({ attrs: t, children: e }) {
     const {
       addon: r,
@@ -9679,7 +9763,7 @@ const Tl = {
       // "sm" | "md" | "lg"
       theme: f = {},
       ...p
-    } = t, g = P(Wi, f);
+    } = t, g = P(Fi, f);
     return h("div", { class: I(g.base, n) }, [
       r && h("span", { class: g.addon }, r),
       h("div", { class: g.field.base }, [
@@ -9770,17 +9854,17 @@ const Tl = {
       h("table", { class: I(o.base, r), ...i }, e)
     ]);
   }
-}, tc = Object.assign(Ml, {
+}, rc = Object.assign(Ml, {
   Head: Ol,
   Body: Pl,
   Row: Sl,
   Cell: jl,
   HeadCell: Rl
-}), Fi = {
+}), Ui = {
   base: "block w-full rounded-lg border disabled:cursor-not-allowed disabled:opacity-50 text-sm",
   colors: {
     failure: "border-red-500 bg-red-50 text-red-900 placeholder-red-700 focus:border-red-500 focus:ring-red-500 dark:border-red-400 dark:bg-red-100 dark:focus:border-red-500 dark:focus:ring-red-500",
-    gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500 focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500",
+    gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500",
     info: "border-blue-500 bg-blue-50 text-blue-900 placeholder-blue-700 focus:border-blue-500 focus:ring-blue-500 dark:border-blue-400 dark:bg-blue-100 dark:focus:border-blue-500 dark:focus:ring-blue-500",
     success: "border-green-500 bg-green-50 text-green-900 placeholder-green-700 focus:border-green-500 focus:ring-green-500 dark:border-green-400 dark:bg-green-100 dark:focus:border-green-500 dark:focus:ring-green-500",
     warning: "border-yellow-500 bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:border-yellow-500 focus:ring-yellow-500 dark:border-yellow-400 dark:bg-yellow-100 dark:focus:border-yellow-500 dark:focus:ring-yellow-500"
@@ -9789,7 +9873,7 @@ const Tl = {
     on: "shadow-sm dark:shadow-sm-light",
     off: ""
   }
-}, rc = {
+}, nc = {
   view({ attrs: t, children: e }) {
     const {
       class: r,
@@ -9799,7 +9883,7 @@ const Tl = {
       shadow: o,
       theme: a = {},
       ...s
-    } = t, c = P(Fi, a);
+    } = t, c = P(Ui, a);
     return [
       h(
         "textarea",
@@ -9809,90 +9893,6 @@ const Tl = {
         },
         e
       ),
-      i && h(er, { color: n }, i)
-    ];
-  }
-}, Ui = {
-  base: "flex",
-  addon: "inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-200 px-3 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-600 dark:text-gray-400",
-  field: {
-    base: "relative w-full",
-    icon: {
-      base: "pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3",
-      svg: "h-5 w-5 text-gray-500 dark:text-gray-400"
-    },
-    rightIcon: {
-      base: "pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3",
-      svg: "h-5 w-5 text-gray-500 dark:text-gray-400"
-    },
-    input: {
-      base: "block w-full border disabled:cursor-not-allowed disabled:opacity-50",
-      sizes: {
-        sm: "p-2 sm:text-xs",
-        md: "p-2.5 text-sm",
-        lg: "sm:text-md p-4"
-      },
-      colors: {
-        failure: "border-red-500 bg-red-50 text-red-900 placeholder-red-700 focus:border-red-500 focus:ring-red-500 dark:border-red-400 dark:bg-red-100 dark:focus:border-red-500 dark:focus:ring-red-500",
-        gray: "bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500 focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500",
-        info: "border-blue-500 bg-blue-50 text-blue-900 placeholder-blue-700 focus:border-blue-500 focus:ring-blue-500 dark:border-blue-400 dark:bg-blue-100 dark:focus:border-blue-500 dark:focus:ring-blue-500",
-        success: "border-green-500 bg-green-50 text-green-900 placeholder-green-700 focus:border-green-500 focus:ring-green-500 dark:border-green-400 dark:bg-green-100 dark:focus:border-green-500 dark:focus:ring-green-500",
-        warning: "border-yellow-500 bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:border-yellow-500 focus:ring-yellow-500 dark:border-yellow-400 dark:bg-yellow-100 dark:focus:border-yellow-500 dark:focus:ring-yellow-500"
-      },
-      withRightIcon: {
-        on: "pr-10",
-        off: ""
-      },
-      withIcon: {
-        on: "pl-10",
-        off: ""
-      },
-      withAddon: {
-        on: "rounded-r-lg",
-        off: "rounded-lg"
-      },
-      withShadow: {
-        on: "shadow-sm dark:shadow-sm-light",
-        off: ""
-      }
-    }
-  }
-}, nc = {
-  view({ attrs: t }) {
-    const {
-      addon: e,
-      class: r,
-      color: n = "gray",
-      // "failure" | "gray" | "info" | "success" | "warning"
-      helperText: i,
-      icon: o,
-      rightIcon: a,
-      shadow: s,
-      sizing: c = "md",
-      // "sm" | "md" | "lg"
-      theme: f = {},
-      ...p
-    } = t, g = P(Ui, f);
-    return [
-      h("div", { class: I(g.base, r) }, [
-        e && h("span", { class: g.addon }, e),
-        h("div", { class: g.field.base }, [
-          o && h("div", { class: g.field.icon.base }, h(o, { class: g.field.icon.svg })),
-          a && h("div", { class: g.field.rightIcon.base }, h(a, { class: g.field.rightIcon.svg })),
-          h("input", {
-            class: I(
-              g.field.input.base,
-              g.field.input.colors[n],
-              g.field.input.sizes[c],
-              g.field.input.withIcon[o ? "on" : "off"],
-              g.field.input.withRightIcon[a ? "on" : "off"],
-              g.field.input.withAddon[e ? "on" : "off"],
-              g.field.input.withShadow[s ? "on" : "off"]
-            ),
-            ...p
-          })
-        ])
-      ]),
       i && h(er, { color: n }, i)
     ];
   }
@@ -9906,7 +9906,7 @@ const Tl = {
     label: "ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
   },
   toggle: {
-    base: "toggle-bg rounded-full border group-focus:ring-4 group-focus:ring-cyan-500/25",
+    base: "toggle-bg rounded-full border group-focus:ring-4 group-focus:ring-blue-500/25",
     checked: {
       on: "after:translate-x-full after:border-white",
       off: "border-gray-200 bg-gray-200 dark:border-gray-600 dark:bg-gray-700",
@@ -10017,17 +10017,17 @@ const Tl = {
   fileInput: Hi,
   footer: Ce,
   helperText: $i,
-  kbd: Bi,
-  label: qi,
+  input: Bi,
+  kbd: qi,
+  label: Gi,
   listGroup: cn,
   navbar: Fe,
-  radio: Gi,
-  range: Vi,
-  select: Wi,
+  radio: Vi,
+  range: Wi,
+  select: Fi,
   spinner: Mi,
   table: Ue,
-  textarea: Fi,
-  textInput: Ui,
+  textarea: Ui,
   toggle: Ki
 };
 export {
@@ -10050,19 +10050,19 @@ export {
   Ul as Footer,
   _l as FooterComponent,
   er as HelperText,
-  Kl as Kbd,
-  Xl as Label,
-  Yl as ListGroup,
+  Kl as Input,
+  Xl as Kbd,
+  Yl as Label,
+  Jl as ListGroup,
   Il as ListGroupComponent,
-  Jl as Navbar,
+  Zl as Navbar,
   zl as NavbarComponent,
-  Zl as Radio,
-  Ql as Range,
-  ec as Select,
+  Ql as Radio,
+  ec as Range,
+  tc as Select,
   sl as Spinner,
-  tc as Table,
-  nc as TextInput,
-  rc as Textarea,
+  rc as Table,
+  nc as Textarea,
   ic as Toggle,
   oc as theme
 };
