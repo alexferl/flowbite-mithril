@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Learn how you can change the Tailwind CSS classes used by the components in Flowbite Mithril">
+<meta name="description" content="Get started with the range component to receive a number from the user anywhere from 1 to 100 by sliding form control horizontally based on multiple options">
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.120.3">
 
-<title>Theme</title>
+<title>Range</title>
 
-<link rel="canonical" href="https://alexferl.github.io/flowbite-mithril/customize/theme/">
+<link rel="canonical" href="https://alexferl.github.io/flowbite-mithril/forms/range/">
 
 
 
@@ -100,7 +100,7 @@
         <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Customize</h5>
         <ul class="py-1 list-unstyled fw-normal small">
           <li>
-            <a href="/flowbite-mithril/customize/theme/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white  !text-blue-700 hover:!text-blue-700 dark:!text-blue-500 dark:hover:!text-blue-500" aria-current="page">Theme </a>
+            <a href="/flowbite-mithril/customize/theme/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Theme </a>
           </li>
         </ul>
       </li>
@@ -167,7 +167,7 @@
             <a href="/flowbite-mithril/forms/radio/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Radio </a>
           </li>
           <li>
-            <a href="/flowbite-mithril/forms/range/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Range </a>
+            <a href="/flowbite-mithril/forms/range/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white  !text-blue-700 hover:!text-blue-700 dark:!text-blue-500 dark:hover:!text-blue-500" aria-current="page">Range </a>
           </li>
           <li>
             <a href="/flowbite-mithril/forms/select/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Select </a>
@@ -197,30 +197,76 @@
           
           <div class="pb-4 mb-8 border-b border-gray-200 dark:border-gray-800">
 
-            <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white" id="content">Theme</h1>
-            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400">Learn how you can change the Tailwind CSS classes used by the components in Flowbite Mithril</p>
+            <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white" id="content">Range</h1>
+            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400">Get started with the range component to receive a number from the user anywhere from 1 to 100 by sliding form control horizontally based on multiple options</p>
           </div>
 
           <div id="mainContent">
 
-            <p>Flowbite Mithril is built on top of Tailwind CSS and it uses Tailwind CSS classes to style the components. This means that you can customize the components by changing the Tailwind CSS classes used by the components.</p>
-<p>You have a few options, and each has its own pros and cons.</p>
-<h2 class="relative group">Option 1: Change the Tailwind CSS classes directly in the component
-<span id="option-1-change-the-tailwind-css-classes-directly-in-the-component" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#option-1-change-the-tailwind-css-classes-directly-in-the-component" aria-label="Link to this section: Option 1: Change the Tailwind CSS classes directly in the component">#</a></h2>
-<p>This is the easiest way to customize the components. You can change the Tailwind CSS classes directly in the component via the <code>class</code> attribute.</p>
+            <h2 class="relative group">Default radio
+<span id="default-radio" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#default-radio" aria-label="Link to this section: Default radio">#</a></h2>
+<p>The range component can be used as an input field to get a number from the user based on your custom selection (ie. from 1 to 100) by using a sliding animation.</p>
 <div class="code-example mt-4 mb-4">
+  
+  <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
+    <div class="grid grid-cols-2">
+      
+      <a href="https://github.com/alexferl/flowbite-mithril/blob/master/src/docs/content/forms/range.md" rel="noreferrer" target="_blank" class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-3 py-2 text-xs text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 dark:text-gray-400 focus:text-primary-700 dark:focus:text-white dark:hover:text-white dark:bg-transparent dark:border-gray-600 dark:hover:border-gray-700 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg dark:!bg-gray-900 w-fit hover:text-primary-600 gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-4 h-4"><path fill="currentColor" fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.069-.6.069-.6a2.084 2.084 0 0 1 1.519 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.267-.973.629-1.325-2.2-.25-4.515-1.1-4.515-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.179.572.681.475A9.91 9.91 0 0 0 10 .333Z" clip-rule="evenodd"></path>
+        </svg>Edit on GitHub
+      </a>
+      
+    </div>
+  </div>
+  <div class="code-preview-wrapper">
+    <div class="flex p-0 bg-white border-gray-200 bg-gradient-to-r code-preview dark:bg-gray-900 border-x dark:border-gray-600">
+      <div class="code-responsive-wrapper w-full">
+        <div id="example-default" class="mx-auto w-full bg-white bg-gradient-to-r p-2 dark:bg-gray-900 sm:p-6">
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div class="code-syntax-wrapper">
     <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
       <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Button } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Label, Range } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> Component <span style="color:#ff7b72;font-weight:bold">=</span> {
 </span></span><span style="display:flex;"><span>  view<span style="color:#ff7b72;font-weight:bold">:</span> () =&gt;
 </span></span><span style="display:flex;"><span>    m(
-</span></span><span style="display:flex;"><span>      Button,
-</span></span><span style="display:flex;"><span>      { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;bg-red-500 enabled:hover:bg-red-600 dark:bg-red-500 dark:enabled:hover:bg-red-600&#34;</span> },
-</span></span><span style="display:flex;"><span>      <span style="color:#a5d6ff">&#34;Click me&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a5d6ff">&#34;div&#34;</span>,
+</span></span><span style="display:flex;"><span>      { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;flex max-w-md flex-col gap-4&#34;</span> },
+</span></span><span style="display:flex;"><span>      m(<span style="color:#a5d6ff">&#34;div&#34;</span>, [
+</span></span><span style="display:flex;"><span>        m(<span style="color:#a5d6ff">&#34;div&#34;</span>, { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;mb-1 block&#34;</span> }, [
+</span></span><span style="display:flex;"><span>          m(Label, { <span style="color:#ff7b72">for</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;default-range&#34;</span> }, <span style="color:#a5d6ff">&#34;Default&#34;</span>),
+</span></span><span style="display:flex;"><span>          m(Range, { id<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;default-range&#34;</span> }),
+</span></span><span style="display:flex;"><span>        ]),
+</span></span><span style="display:flex;"><span>      ]),
+</span></span><span style="display:flex;"><span>      m(<span style="color:#a5d6ff">&#34;div&#34;</span>, [
+</span></span><span style="display:flex;"><span>        m(<span style="color:#a5d6ff">&#34;div&#34;</span>, { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;mb-1 block&#34;</span> }, [
+</span></span><span style="display:flex;"><span>          m(Label, { <span style="color:#ff7b72">for</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;disabled-range&#34;</span> }, <span style="color:#a5d6ff">&#34;Disabled&#34;</span>),
+</span></span><span style="display:flex;"><span>          m(Range, { id<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;disabled-range&#34;</span>, disabled<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#79c0ff">true</span> }),
+</span></span><span style="display:flex;"><span>        ]),
+</span></span><span style="display:flex;"><span>      ]),
+</span></span><span style="display:flex;"><span>      m(<span style="color:#a5d6ff">&#34;div&#34;</span>, [
+</span></span><span style="display:flex;"><span>        m(<span style="color:#a5d6ff">&#34;div&#34;</span>, { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;mb-1 block&#34;</span> }, [
+</span></span><span style="display:flex;"><span>          m(Label, { <span style="color:#ff7b72">for</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;sm-range&#34;</span> }, <span style="color:#a5d6ff">&#34;Small&#34;</span>),
+</span></span><span style="display:flex;"><span>          m(Range, { id<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;sm-range&#34;</span>, size<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;sm&#34;</span> }),
+</span></span><span style="display:flex;"><span>        ]),
+</span></span><span style="display:flex;"><span>      ]),
+</span></span><span style="display:flex;"><span>      m(<span style="color:#a5d6ff">&#34;div&#34;</span>, [
+</span></span><span style="display:flex;"><span>        m(<span style="color:#a5d6ff">&#34;div&#34;</span>, { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;mb-1 block&#34;</span> }, [
+</span></span><span style="display:flex;"><span>          m(Label, { <span style="color:#ff7b72">for</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;md-range&#34;</span> }, <span style="color:#a5d6ff">&#34;Medium&#34;</span>),
+</span></span><span style="display:flex;"><span>          m(Range, { id<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;md-range&#34;</span>, size<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;md&#34;</span> }),
+</span></span><span style="display:flex;"><span>        ]),
+</span></span><span style="display:flex;"><span>      ]),
+</span></span><span style="display:flex;"><span>      m(<span style="color:#a5d6ff">&#34;div&#34;</span>, [
+</span></span><span style="display:flex;"><span>        m(<span style="color:#a5d6ff">&#34;div&#34;</span>, { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;mb-1 block&#34;</span> }, [
+</span></span><span style="display:flex;"><span>          m(Label, { <span style="color:#ff7b72">for</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;lg-range&#34;</span> }, <span style="color:#a5d6ff">&#34;Large&#34;</span>),
+</span></span><span style="display:flex;"><span>          m(Range, { id<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;lg-range&#34;</span>, size<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;lg&#34;</span> }),
+</span></span><span style="display:flex;"><span>        ]),
+</span></span><span style="display:flex;"><span>      ]),
 </span></span><span style="display:flex;"><span>    ),
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
@@ -229,17 +275,46 @@
 </div>
 
 <script type="module">
-  var root = document.getElementById("example-option-1")
+  var root = document.getElementById("example-default")
 
   
-import { Button } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
+import { Label, Range } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
 
 const Component = {
   view: () =>
     m(
-      Button,
-      { class: "bg-red-500 enabled:hover:bg-red-600 dark:bg-red-500 dark:enabled:hover:bg-red-600" },
-      "Click me",
+      "div",
+      { class: "flex max-w-md flex-col gap-4" },
+      m("div", [
+        m("div", { class: "mb-1 block" }, [
+          m(Label, { for: "default-range" }, "Default"),
+          m(Range, { id: "default-range" }),
+        ]),
+      ]),
+      m("div", [
+        m("div", { class: "mb-1 block" }, [
+          m(Label, { for: "disabled-range" }, "Disabled"),
+          m(Range, { id: "disabled-range", disabled: true }),
+        ]),
+      ]),
+      m("div", [
+        m("div", { class: "mb-1 block" }, [
+          m(Label, { for: "sm-range" }, "Small"),
+          m(Range, { id: "sm-range", size: "sm" }),
+        ]),
+      ]),
+      m("div", [
+        m("div", { class: "mb-1 block" }, [
+          m(Label, { for: "md-range" }, "Medium"),
+          m(Range, { id: "md-range", size: "md" }),
+        ]),
+      ]),
+      m("div", [
+        m("div", { class: "mb-1 block" }, [
+          m(Label, { for: "lg-range" }, "Large"),
+          m(Range, { id: "lg-range", size: "lg" }),
+        ]),
+      ]),
     ),
 };
 
@@ -248,64 +323,47 @@ const Component = {
 </script>
 
 
-<p>The downside of this approach is that you have to change the <code>class</code> attribute in every component instance. This can be tedious and error-prone. Also, some components have nested elements that are not directly exposed, which in some cases makes this approach impossible.</p>
-<h2 class="relative group">Option 2: Create a reusable component with a custom theme
-<span id="option-2-create-a-reusable-component-with-a-custom-theme" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#option-2-create-a-reusable-component-with-a-custom-theme" aria-label="Link to this section: Option 2: Create a reusable component with a custom theme">#</a></h2>
-<p>You can pass <code>theme={}</code> directly to any component, which will override the theme for that component, but not its children. This is useful if you want to create a reusable component with a custom theme.
+<h2 class="relative group">Theme
+<span id="theme" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#theme" aria-label="Link to this section: Theme">#</a></h2>
+<p>To learn more about how to customize the appearance of components, please see the <a href="https://www.flowbite-react.com/docs/customize/theme">Theme docs</a>.</p>
 <div class="code-example mt-4 mb-4">
   
   <div class="code-syntax-wrapper">
     <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
-      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Button } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> customTheme <span style="color:#ff7b72;font-weight:bold">=</span> {
-</span></span><span style="display:flex;"><span>  color<span style="color:#ff7b72;font-weight:bold">:</span> {
-</span></span><span style="display:flex;"><span>    primary<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;bg-red-500 enabled:hover:bg-red-600 dark:bg-red-500 dark:enabled:hover:bg-red-600 text-white&#34;</span>,
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;root&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;flex&#34;</span>
 </span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> Component <span style="color:#ff7b72;font-weight:bold">=</span> {
-</span></span><span style="display:flex;"><span>  view<span style="color:#ff7b72;font-weight:bold">:</span> () =&gt;
-</span></span><span style="display:flex;"><span>    m(Button, { theme<span style="color:#ff7b72;font-weight:bold">:</span> customTheme, color<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;primary&#34;</span> }, <span style="color:#a5d6ff">&#34;Click me&#34;</span>),
-</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">&#34;field&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;relative w-full&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">&#34;input&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;base&#34;</span>: <span style="color:#a5d6ff">&#34;w-full bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#7ee787">&#34;sizes&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;sm&#34;</span>: <span style="color:#a5d6ff">&#34;h-1 range-sm&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;md&#34;</span>: <span style="color:#a5d6ff">&#34;h-2&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#7ee787">&#34;lg&#34;</span>: <span style="color:#a5d6ff">&#34;h-3 range-lg&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div>
     </div>
   </div>
 </div>
 
-<script type="module">
-  var root = document.getElementById("example-option-2")
-
-  
-import { Button } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
-
-const customTheme = {
-  color: {
-    primary: "bg-red-500 enabled:hover:bg-red-600 dark:bg-red-500 dark:enabled:hover:bg-red-600 text-white",
-  },
-};
-
-const Component = {
-  view: () =>
-    m(Button, { theme: customTheme, color: "primary" }, "Click me"),
-};
 
 
-  m.mount(root, Component)
-</script>
-
-</p>
 
 
             <aside class="flex mt-6 mb-8 font-medium leading-6" aria-label="Previous and next page navigation">
               
-              <a class="flex items-center justify-center mr-8 text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="/flowbite-mithril/getting-started/quickstart/"><svg class="w-3.5 h-3.5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <a class="flex items-center justify-center mr-8 text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="/flowbite-mithril/forms/radio/"><svg class="w-3.5 h-3.5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
-              </svg>Quickstart</a>
+              </svg>Radio</a>
               
               
-              <a class="flex items-center justify-center ml-auto text-right text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="/flowbite-mithril/components/accordion/">Accordion<svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <a class="flex items-center justify-center ml-auto text-right text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="/flowbite-mithril/forms/select/">Select<svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
               </svg></a>
               
@@ -322,8 +380,8 @@ const Component = {
               <h4 class="pl-2.5 mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">On this page</h4>
               <nav id="TableOfContents">
   <ul>
-    <li><a href="#option-1-change-the-tailwind-css-classes-directly-in-the-component">Option 1: Change the Tailwind CSS classes directly in the component</a></li>
-    <li><a href="#option-2-create-a-reusable-component-with-a-custom-theme">Option 2: Create a reusable component with a custom theme</a></li>
+    <li><a href="#default-radio">Default radio</a></li>
+    <li><a href="#theme">Theme</a></li>
   </ul>
 </nav>
             </div>

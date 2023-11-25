@@ -12,7 +12,9 @@
       <link>https://alexferl.github.io/flowbite-mithril/customize/theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/customize/theme/</guid>
-      <description></description>
+      <description>Flowbite Mithril is built on top of Tailwind CSS and it uses Tailwind CSS classes to style the components. This means that you can customize the components by changing the Tailwind CSS classes used by the components.
+You have a few options, and each has its own pros and cons.
+Option 1: Change the Tailwind CSS classes directly in the component # This is the easiest way to customize the components.</description>
     </item>
   </channel>
 </rss>

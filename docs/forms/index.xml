@@ -8,12 +8,70 @@
     <language>en-us</language>
     <atom:link href="https://alexferl.github.io/flowbite-mithril/forms/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Input Field</title>
-      <link>https://alexferl.github.io/flowbite-mithril/forms/input-field/</link>
+      <title>Checkbox</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/checkbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://alexferl.github.io/flowbite-mithril/forms/input-field/</guid>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/checkbox/</guid>
+      <description>The checkbox component can be used to receive one or more selected options from the user in the form of a square box available in multiple styles, sizes, colors, and variants.
+Default checkbox # Use this example to show a list of options to your users that they can choose from by using the &amp;lt;Checkbox&amp;gt; component.
+Edit on GitHub import { Checkbox, Label } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex max-w-md flex-col gap-4&amp;#34;, id: &amp;#34;checkbox&amp;#34; }, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex items-center gap-2&amp;#34; }, [ m(Checkbox, { id: &amp;#34;accepted&amp;#34;, checked: true }), m(Label, { for: &amp;#34;accepted&amp;#34;, class: &amp;#34;flex&amp;#34; }, [ &amp;#34; I agree with the&amp;#34;, m.</description>
+    </item>
+    <item>
+      <title>File Input</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/file-input/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/file-input/</guid>
+      <description>Default file input # Use the &amp;lt;FileInput&amp;gt; component to allow users to upload files from their browser.
+Edit on GitHub import { FileInput, Label } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(&amp;#34;div&amp;#34;, { id: &amp;#34;fileUpload&amp;#34;, class: &amp;#34;max-w-md&amp;#34; }, [ m( &amp;#34;div&amp;#34;, { class: &amp;#34;mb-2 block&amp;#34; }, m(Label, { for: &amp;#34;file&amp;#34;, value: &amp;#34;Upload file&amp;#34; }), m(FileInput, { id: &amp;#34;file&amp;#34;, helperText: &amp;#34;A profile picture is useful to confirm your are logged into your account&amp;#34;, }), ), ]), }; Theme # To learn more about how to customize the appearance of components, please see the Theme docs.</description>
+    </item>
+    <item>
+      <title>Input</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/input/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/input/</guid>
       <description>The input field is an important part of the form element that can be used to create interactive controls to accept data from the user based on multiple input types, such as text, email, number, password, URL, phone number, and more.
 On this page you will find all of the input types based on multiple variants, styles, colors, and sizes built with the utility classes from Tailwind CSS and components from Flowbite.</description>
+    </item>
+    <item>
+      <title>Radio</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/radio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/radio/</guid>
+      <description>Default radio # Ask your users to choose only one value from multiple options based on the &amp;lt;Radio&amp;gt; component.
+Edit on GitHub import { Label, Radio } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(&amp;#34;fieldset&amp;#34;, { class: &amp;#34;flex max-w-md flex-col gap-4&amp;#34; }, [ m(&amp;#34;legend&amp;#34;, { class: &amp;#34;mb-4 text-gray-400&amp;#34; }, &amp;#34;Choose your favorite country&amp;#34;), m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex items-center gap-2&amp;#34; }, [ m(Radio, { id: &amp;#34;united-states&amp;#34;, name: &amp;#34;countries&amp;#34;, value: &amp;#34;USA&amp;#34;, checked: true }), m(Label, { for: &amp;#34;united-states&amp;#34; }, &amp;#34;United States&amp;#34;), ]), m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex items-center gap-2&amp;#34; }, [ m(Radio, { id: &amp;#34;germany&amp;#34;, name: &amp;#34;countries&amp;#34;, value: &amp;#34;Germany&amp;#34; }), m(Label, { for: &amp;#34;germany&amp;#34; }, &amp;#34;Germany&amp;#34;), ]), m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex items-center gap-2&amp;#34; }, [ m(Radio, { id: &amp;#34;spain&amp;#34;, name: &amp;#34;countries&amp;#34;, value: &amp;#34;Spain&amp;#34; }), m(Label, { for: &amp;#34;spain&amp;#34; }, &amp;#34;Spain&amp;#34;), ]), m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex items-center gap-2&amp;#34; }, [ m(Radio, { id: &amp;#34;uk&amp;#34;, name: &amp;#34;countries&amp;#34;, value: &amp;#34;United Kingdon&amp;#34; }), m(Label, { for: &amp;#34;uk&amp;#34; }, &amp;#34;United Kingdom&amp;#34;), ]), m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex items-center gap-2&amp;#34; }, [ m(Radio, { id: &amp;#34;china&amp;#34;, name: &amp;#34;countries&amp;#34;, value: &amp;#34;China&amp;#34;, disabled: true }), m(Label, { for: &amp;#34;china&amp;#34;, disabled: true }, &amp;#34;China (disabled)&amp;#34;), ]), ]), }; Theme # To learn more about how to customize the appearance of components, please see the Theme docs.</description>
+    </item>
+    <item>
+      <title>Range</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/range/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/range/</guid>
+      <description>Default radio # The range component can be used as an input field to get a number from the user based on your custom selection (ie. from 1 to 100) by using a sliding animation.
+Edit on GitHub import { Label, Range } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m( &amp;#34;div&amp;#34;, { class: &amp;#34;flex max-w-md flex-col gap-4&amp;#34; }, m(&amp;#34;div&amp;#34;, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;mb-1 block&amp;#34; }, [ m(Label, { for: &amp;#34;default-range&amp;#34; }, &amp;#34;Default&amp;#34;), m(Range, { id: &amp;#34;default-range&amp;#34; }), ]), ]), m(&amp;#34;div&amp;#34;, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;mb-1 block&amp;#34; }, [ m(Label, { for: &amp;#34;disabled-range&amp;#34; }, &amp;#34;Disabled&amp;#34;), m(Range, { id: &amp;#34;disabled-range&amp;#34;, disabled: true }), ]), ]), m(&amp;#34;div&amp;#34;, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;mb-1 block&amp;#34; }, [ m(Label, { for: &amp;#34;sm-range&amp;#34; }, &amp;#34;Small&amp;#34;), m(Range, { id: &amp;#34;sm-range&amp;#34;, size: &amp;#34;sm&amp;#34; }), ]), ]), m(&amp;#34;div&amp;#34;, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;mb-1 block&amp;#34; }, [ m(Label, { for: &amp;#34;md-range&amp;#34; }, &amp;#34;Medium&amp;#34;), m(Range, { id: &amp;#34;md-range&amp;#34;, size: &amp;#34;md&amp;#34; }), ]), ]), m(&amp;#34;div&amp;#34;, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;mb-1 block&amp;#34; }, [ m(Label, { for: &amp;#34;lg-range&amp;#34; }, &amp;#34;Large&amp;#34;), m(Range, { id: &amp;#34;lg-range&amp;#34;, size: &amp;#34;lg&amp;#34; }), ]), ]), ), }; Theme # To learn more about how to customize the appearance of components, please see the Theme docs.</description>
+    </item>
+    <item>
+      <title>Select</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/select/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/select/</guid>
+      <description>Default select # This component can be used to allow users to select from multiple options based on the &amp;lt;Select&amp;gt; component.
+Edit on GitHub import { Label, Select } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(&amp;#34;div&amp;#34;, { class: &amp;#34;max-w-md&amp;#34; }, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;mb-2 block&amp;#34; }, m(Label, { for: &amp;#34;countries&amp;#34; }, &amp;#34;Select your country&amp;#34;)), m(Select, { id: &amp;#34;countries&amp;#34;, required: true }, [ m(&amp;#34;option&amp;#34;, &amp;#34;United States&amp;#34;), m(&amp;#34;option&amp;#34;, &amp;#34;Canada&amp;#34;), m(&amp;#34;option&amp;#34;, &amp;#34;France&amp;#34;), m(&amp;#34;option&amp;#34;, &amp;#34;Germany&amp;#34;), ]), ]), }; Theme # To learn more about how to customize the appearance of components, please see the Theme docs.</description>
+    </item>
+    <item>
+      <title>Textarea</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/textarea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/textarea/</guid>
+      <description>The textarea component is a multi-line text field input that can be used to receive longer chunks of text from the user in the form of a comment box, description field, and more.
+Default textarea # Use this example to show a textarea component and receive longer text from your users.
+Edit on GitHub import { Label, Textarea } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(&amp;#34;div&amp;#34;, { class: &amp;#34;max-w-md&amp;#34; }, [ m(&amp;#34;div&amp;#34;, { class: &amp;#34;mb-2 block&amp;#34; }, m(Label, { for: &amp;#34;comment&amp;#34; }, &amp;#34;Your message&amp;#34;)), m(Textarea, { id: &amp;#34;comment&amp;#34;, placeholder: &amp;#34;Leave a comment.</description>
+    </item>
+    <item>
+      <title>Toggle</title>
+      <link>https://alexferl.github.io/flowbite-mithril/forms/toggle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://alexferl.github.io/flowbite-mithril/forms/toggle/</guid>
+      <description>The toggle component can be used to receive a simple “yes” or “no” type of answer from the user by choosing a single option from two options available.
+Default toggle # Edit on GitHub import { Label, Toggle } from &amp;#34;flowbite-mithril&amp;#34;; const Component = { view: () =&amp;gt; m(&amp;#34;div&amp;#34;, { class: &amp;#34;flex max-w-md flex-col gap-4&amp;#34; }, [ m(Toggle, { id: &amp;#34;toggle&amp;#34;, label: &amp;#34;Toggle me&amp;#34; }), m(Toggle, { id: &amp;#34;toggle-checked&amp;#34;, checked: true, label: &amp;#34;Toggle me (checked)&amp;#34; }), m(Toggle, { id: &amp;#34;toggle-disabled&amp;#34;, disabled: true, label: &amp;#34;Toggle me (disabled)&amp;#34; }), m(Toggle, { id: &amp;#34;toggle-disabled-checked&amp;#34;, disabled: true, checked: true, label: &amp;#34;Toggle me (disabled)&amp;#34; }), ]), }; Theme # To learn more about how to customize the appearance of components, please see the Theme docs.</description>
     </item>
   </channel>
 </rss>

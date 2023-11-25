@@ -22,11 +22,15 @@
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/card/</loc>
   </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/checkbox/</loc>
+  </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/customize/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/dropdown/</loc>
+  </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/file-input/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/footer/</loc>
   </url><url>
@@ -34,7 +38,7 @@
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/getting-started/</loc>
   </url><url>
-    <loc>https://alexferl.github.io/flowbite-mithril/forms/input-field/</loc>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/input/</loc>
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/kbd/</loc>
   </url><url>
@@ -44,8 +48,18 @@
   </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/getting-started/quickstart/</loc>
   </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/radio/</loc>
+  </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/range/</loc>
+  </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/select/</loc>
+  </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/components/spinner/</loc>
   </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/textarea/</loc>
+  </url><url>
     <loc>https://alexferl.github.io/flowbite-mithril/customize/theme/</loc>
+  </url><url>
+    <loc>https://alexferl.github.io/flowbite-mithril/forms/toggle/</loc>
   </url>
 </urlset>

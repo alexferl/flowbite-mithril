@@ -16,7 +16,7 @@
 
 
 
-<link rel="stylesheet" href="/flowbite-mithril/css/styles.min.b0686819d19bcb6d40e28213a1864200ef39442e84b2531929423329111fd929.css">
+<link rel="stylesheet" href="/flowbite-mithril/css/styles.min.4487a333d32f9dfa84910f28e6ce204fdff0ae99966c4d8d19e121ccda83d454.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 
@@ -155,7 +155,28 @@
         <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Forms</h5>
         <ul class="py-1 list-unstyled fw-normal small">
           <li>
-            <a href="/flowbite-mithril/forms/input-field/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Input Field </a>
+            <a href="/flowbite-mithril/forms/checkbox/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Checkbox </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/file-input/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">File Input </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/input/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Input </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/radio/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Radio </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/range/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Range </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/select/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Select </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/textarea/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Textarea </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/toggle/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Toggle </a>
           </li>
         </ul>
       </li>
@@ -187,7 +208,7 @@
 <h2 class="relative group">Default accordion
 <span id="default-accordion" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#default-accordion" aria-label="Link to this section: Default accordion">#</a></h2>
 <p>Use this example of the <code>&lt;Accordion&gt;</code> component and the <code>&lt;Accordion.Panel&gt;</code> and <code>&lt;Accordion.Title&gt;</code> subcomponents to create an accordion with multiple panels.</p>
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
     <div class="grid grid-cols-2">
@@ -229,7 +250,7 @@
 </span></span><span style="display:flex;"><span>            m.trust(<span style="color:#a5d6ff">&#34;&amp;nbsp;&#34;</span>),
 </span></span><span style="display:flex;"><span>            <span style="color:#a5d6ff">&#34; &#34;</span>,
 </span></span><span style="display:flex;"><span>            m(
-</span></span><span style="display:flex;"><span>              <span style="color:#a5d6ff">&#34;a&#34;</span>,
+</span></span><span style="display:flex;"><span>              m.route.Link,
 </span></span><span style="display:flex;"><span>              {
 </span></span><span style="display:flex;"><span>                href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;https://flowbite.com/docs/getting-started/introduction/&#34;</span>,
 </span></span><span style="display:flex;"><span>                <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;text-blue-600 hover:underline dark:text-blue-500&#34;</span>,
@@ -251,7 +272,7 @@
 </span></span><span style="display:flex;"><span>          m(<span style="color:#a5d6ff">&#34;p&#34;</span>, { <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;text-gray-500 dark:text-gray-400&#34;</span> }, [
 </span></span><span style="display:flex;"><span>            <span style="color:#a5d6ff">&#34; Check out the &#34;</span>,
 </span></span><span style="display:flex;"><span>            m(
-</span></span><span style="display:flex;"><span>              <span style="color:#a5d6ff">&#34;a&#34;</span>,
+</span></span><span style="display:flex;"><span>              m.route.Link,
 </span></span><span style="display:flex;"><span>              { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;https://flowbite.com/figma/&#34;</span>, <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;text-blue-600 hover:underline dark:text-blue-500&#34;</span> },
 </span></span><span style="display:flex;"><span>              <span style="color:#a5d6ff">&#34; Figma design system &#34;</span>,
 </span></span><span style="display:flex;"><span>            ),
@@ -277,7 +298,7 @@
 </span></span><span style="display:flex;"><span>            m(
 </span></span><span style="display:flex;"><span>              <span style="color:#a5d6ff">&#34;li&#34;</span>,
 </span></span><span style="display:flex;"><span>              m(
-</span></span><span style="display:flex;"><span>                <span style="color:#a5d6ff">&#34;a&#34;</span>,
+</span></span><span style="display:flex;"><span>                m.route.Link,
 </span></span><span style="display:flex;"><span>                { href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;https://flowbite.com/pro/&#34;</span>, <span style="color:#ff7b72">class</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;text-blue-600 hover:underline dark:text-blue-500&#34;</span> },
 </span></span><span style="display:flex;"><span>                <span style="color:#a5d6ff">&#34; Flowbite Pro &#34;</span>,
 </span></span><span style="display:flex;"><span>              ),
@@ -285,7 +306,7 @@
 </span></span><span style="display:flex;"><span>            m(
 </span></span><span style="display:flex;"><span>              <span style="color:#a5d6ff">&#34;li&#34;</span>,
 </span></span><span style="display:flex;"><span>              m(
-</span></span><span style="display:flex;"><span>                <span style="color:#a5d6ff">&#34;a&#34;</span>,
+</span></span><span style="display:flex;"><span>                m.route.Link,
 </span></span><span style="display:flex;"><span>                {
 </span></span><span style="display:flex;"><span>                  href<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;https://tailwindui.com/&#34;</span>,
 </span></span><span style="display:flex;"><span>                  rel<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;nofollow&#34;</span>,
@@ -326,7 +347,7 @@ export const Component = {
             m.trust("&nbsp;"),
             " ",
             m(
-              "a",
+              m.route.Link,
               {
                 href: "https://flowbite.com/docs/getting-started/introduction/",
                 class: "text-blue-600 hover:underline dark:text-blue-500",
@@ -348,7 +369,7 @@ export const Component = {
           m("p", { class: "text-gray-500 dark:text-gray-400" }, [
             " Check out the ",
             m(
-              "a",
+              m.route.Link,
               { href: "https://flowbite.com/figma/", class: "text-blue-600 hover:underline dark:text-blue-500" },
               " Figma design system ",
             ),
@@ -374,7 +395,7 @@ export const Component = {
             m(
               "li",
               m(
-                "a",
+                m.route.Link,
                 { href: "https://flowbite.com/pro/", class: "text-blue-600 hover:underline dark:text-blue-500" },
                 " Flowbite Pro ",
               ),
@@ -382,7 +403,7 @@ export const Component = {
             m(
               "li",
               m(
-                "a",
+                m.route.Link,
                 {
                   href: "https://tailwindui.com/",
                   rel: "nofollow",
@@ -405,7 +426,7 @@ export const Component = {
 <h2 class="relative group">Theme
 <span id="theme" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#theme" aria-label="Link to this section: Theme">#</a></h2>
 <p>To learn more about how to customize the appearance of components, please see the <a href="https://www.flowbite-react.com/docs/customize/theme">Theme docs</a>.</p>
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="code-syntax-wrapper">
     <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">

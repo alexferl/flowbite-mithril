@@ -16,7 +16,7 @@
 
 
 
-<link rel="stylesheet" href="/flowbite-mithril/css/styles.min.b0686819d19bcb6d40e28213a1864200ef39442e84b2531929423329111fd929.css">
+<link rel="stylesheet" href="/flowbite-mithril/css/styles.min.4487a333d32f9dfa84910f28e6ce204fdff0ae99966c4d8d19e121ccda83d454.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 
@@ -155,7 +155,28 @@
         <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Forms</h5>
         <ul class="py-1 list-unstyled fw-normal small">
           <li>
-            <a href="/flowbite-mithril/forms/input-field/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Input Field </a>
+            <a href="/flowbite-mithril/forms/checkbox/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Checkbox </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/file-input/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">File Input </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/input/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Input </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/radio/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Radio </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/range/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Range </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/select/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Select </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/textarea/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Textarea </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/toggle/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Toggle </a>
           </li>
         </ul>
       </li>
@@ -188,7 +209,7 @@
 <span id="default-alert" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#default-alert" aria-label="Link to this section: Default alert">#</a></h2>
 <p>The default alert component is a simple alert box with a text inside it and you can use the <code>color</code> attribute to change the color of the alert box and the <code>title</code> attribute to add a title to the alert box.</p>
 <p>Inside the <code>&lt;Alert&gt;</code> component you can add any type of content such as text, images, or other components as they will be considered children of the alert box.</p>
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
     <div class="grid grid-cols-2">
@@ -248,7 +269,7 @@ const Component = {
 <h2 class="relative group">Alert with icon
 <span id="alert-with-icon" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#alert-with-icon" aria-label="Link to this section: Alert with icon">#</a></h2>
 <p>Use the <code>icon</code> attribute to add an icon to the alert box and you can use any icon from the <a href="https://github.com/alexferl/flowbite-icons-mithril">Flowbite Icons Mithril</a> library.</p>
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
     <div class="grid grid-cols-2">
@@ -310,7 +331,7 @@ const Component = {
 <h2 class="relative group">Dismissible alert
 <span id="dismissible-alert" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#dismissible-alert" aria-label="Link to this section: Dismissible alert">#</a></h2>
 <p>You can use the <code>onDismiss</code> attribute on the <code>&lt;Alert&gt;</code> component to add a dismiss button to the alert box by adding a function inside of it that will be called when the user clicks on the dismiss button.</p>
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
     <div class="grid grid-cols-2">
@@ -370,7 +391,7 @@ const Component = {
 <h2 class="relative group">Rounded alert
 <span id="rounded-alert" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#rounded-alert" aria-label="Link to this section: Rounded alert">#</a></h2>
 <p>To make the alert box rounded you can use the <code>rounded</code> attribute on the <code>&lt;Alert&gt;</code> component.
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
     <div class="grid grid-cols-2">
@@ -430,7 +451,7 @@ const Component = {
 <h2 class="relative group">Border accent
 <span id="border-accent" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#border-accent" aria-label="Link to this section: Border accent">#</a></h2>
 <p>Add a border accent to the alert box by applying the <code>withBorderAccent</code> attribute on the <code>&lt;Alert&gt;</code> component.</p>
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="w-full p-4 border border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
     <div class="grid grid-cols-2">
@@ -490,7 +511,7 @@ const Component = {
 <h2 class="relative group">Theme
 <span id="theme" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#theme" aria-label="Link to this section: Theme">#</a></h2>
 <p>To learn more about how to customize the appearance of components, please see the <a href="https://www.flowbite-react.com/docs/customize/theme">Theme docs</a>.</p>
-<div class="code-example mt-8">
+<div class="code-example mt-4 mb-4">
   
   <div class="code-syntax-wrapper">
     <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">

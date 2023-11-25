@@ -16,7 +16,7 @@
 
 
 
-<link rel="stylesheet" href="/flowbite-mithril/css/styles.min.b0686819d19bcb6d40e28213a1864200ef39442e84b2531929423329111fd929.css">
+<link rel="stylesheet" href="/flowbite-mithril/css/styles.min.4487a333d32f9dfa84910f28e6ce204fdff0ae99966c4d8d19e121ccda83d454.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 
@@ -155,7 +155,28 @@
         <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Forms</h5>
         <ul class="py-1 list-unstyled fw-normal small">
           <li>
-            <a href="/flowbite-mithril/forms/input-field/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Input Field </a>
+            <a href="/flowbite-mithril/forms/checkbox/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Checkbox </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/file-input/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">File Input </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/input/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Input </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/radio/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Radio </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/range/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Range </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/select/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Select </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/textarea/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Textarea </a>
+          </li>
+          <li>
+            <a href="/flowbite-mithril/forms/toggle/" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Toggle </a>
           </li>
         </ul>
       </li>
@@ -186,6 +207,154 @@
 <span id="getting-started" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#getting-started" aria-label="Link to this section: Getting started">#</a></h2>
 <p>You can install Flowbite Mithril to any Node.js project.</p>
 <p>You&rsquo;ll need to be familiar with Node.js, and have it installed.</p>
+<h2 class="relative group">Setup Tailwind CSS
+<span id="setup-tailwind-css" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#setup-tailwind-css" aria-label="Link to this section: Setup Tailwind CSS">#</a></h2>
+<p>Install Tailwind CSS:</p>
+<div class="code-example mt-4 mb-4">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>npm i autoprefixer postcss tailwindcss
+</span></span><span style="display:flex;"><span>npx tailwindcss init -p
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+
+
+<p>Point Tailwind CSS to files you have <code>class=&quot;...&quot;</code> in:</p>
+<div class="code-example mt-4 mb-4">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>module.exports <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  content<span style="color:#ff7b72;font-weight:bold">:</span> [<span style="color:#a5d6ff">&#34;./src/**/*.js&#34;</span>],
+</span></span><span style="display:flex;"><span>  theme<span style="color:#ff7b72;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>    extend<span style="color:#ff7b72;font-weight:bold">:</span> {},
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  plugins<span style="color:#ff7b72;font-weight:bold">:</span> [],
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  var root = document.getElementById("example-tailwind")
+
+  
+module.exports = {
+  content: ["./src/**/*.js"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+
+  m.mount(root, Component)
+</script>
+
+
+<p>Add Tailwind CSS to a CSS file:</p>
+<div class="code-example mt-4 mb-4">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@<span style="color:#ff7b72">tailwind</span> <span style="color:#7ee787">base</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#ff7b72">tailwind</span> <span style="color:#7ee787">components</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#ff7b72">tailwind</span> <span style="color:#7ee787">utilities</span>;
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+
+
+<h2 class="relative group">Install Flowbite Mithril
+<span id="install-flowbite-mithril" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#install-flowbite-mithril" aria-label="Link to this section: Install Flowbite Mithril">#</a></h2>
+<p>Install Flowbite and Flowbite Mithril:</p>
+<div class="code-example mt-4 mb-4">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>npm i -D flowbite flowbite-mithril
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+
+
+<p>Add the Flowbite plugin to <code>tailwind.config.js</code>, and include content from <code>flowbite-mithril</code>:</p>
+<div class="code-example mt-4 mb-4">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>module.exports <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  content<span style="color:#ff7b72;font-weight:bold">:</span> [<span style="color:#a5d6ff">&#34;./node_modules/flowbite-mithril/**/*.js&#34;</span>],
+</span></span><span style="display:flex;"><span>  plugins<span style="color:#ff7b72;font-weight:bold">:</span> [require(<span style="color:#a5d6ff">&#34;flowbite/plugin&#34;</span>)],
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  var root = document.getElementById("example-install")
+
+  
+module.exports = {
+  content: ["./node_modules/flowbite-mithril/**/*.js"],
+  plugins: [require("flowbite/plugin")],
+};
+
+
+  m.mount(root, Component)
+</script>
+
+
+<h2 class="relative group">Try it out
+<span id="try-it-out" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#try-it-out" aria-label="Link to this section: Try it out">#</a></h2>
+<p>How you use Flowbite Mithril depends on your project setup. In general, you can just import the components you want to use from <code>flowbite-mithril</code> and use them in a Mithril <code>.js</code> file:</p>
+<div class="code-example mt-4 mb-4">
+  
+  <div class="code-syntax-wrapper">
+    <div class="relative border-gray-200 border-y border-x code-syntax dark:border-gray-600">
+      <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> { Button } from <span style="color:#a5d6ff">&#34;flowbite-mithril&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> Component <span style="color:#ff7b72;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  view<span style="color:#ff7b72;font-weight:bold">:</span> () =&gt;
+</span></span><span style="display:flex;"><span>    m(Button, <span style="color:#a5d6ff">&#34;Click me&#34;</span>),
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  var root = document.getElementById("example-install")
+
+  
+import { Button } from "https://alexferl.github.io/flowbite-mithril/js/flowbite-mithril.js";
+
+const Component = {
+  view: () =>
+    m(Button, "Click me"),
+};
+
+
+  m.mount(root, Component)
+</script>
+
+
 
 
             <aside class="flex mt-6 mb-8 font-medium leading-6" aria-label="Previous and next page navigation">
@@ -209,6 +378,9 @@
               <nav id="TableOfContents">
   <ul>
     <li><a href="#getting-started">Getting started</a></li>
+    <li><a href="#setup-tailwind-css">Setup Tailwind CSS</a></li>
+    <li><a href="#install-flowbite-mithril">Install Flowbite Mithril</a></li>
+    <li><a href="#try-it-out">Try it out</a></li>
   </ul>
 </nav>
             </div>

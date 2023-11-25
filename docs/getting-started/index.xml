@@ -13,7 +13,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://alexferl.github.io/flowbite-mithril/getting-started/quickstart/</guid>
       <description>Getting started # You can install Flowbite Mithril to any Node.js project.
-You&amp;rsquo;ll need to be familiar with Node.js, and have it installed.</description>
+You&amp;rsquo;ll need to be familiar with Node.js, and have it installed.
+Setup Tailwind CSS # Install Tailwind CSS:
+npm i autoprefixer postcss tailwindcss npx tailwindcss init -p Point Tailwind CSS to files you have class=&amp;quot;...&amp;quot; in:
+module.exports = { content: [&amp;#34;./src/**/*.js&amp;#34;], theme: { extend: {}, }, plugins: [], }; Add Tailwind CSS to a CSS file:
+@tailwind base; @tailwind components; @tailwind utilities; Install Flowbite Mithril # Install Flowbite and Flowbite Mithril:</description>
     </item>
   </channel>
 </rss>
