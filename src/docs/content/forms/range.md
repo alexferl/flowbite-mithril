@@ -59,7 +59,7 @@ const Component = {
 
 ## Theme
 
-To learn more about how to customize the appearance of components, please see the [Theme docs](https://www.flowbite-react.com/docs/customize/theme).
+To learn more about how to customize the appearance of components, please see the [Theme docs](https://alexferl.github.io/flowbite-mithril/customize/theme/).
 
 {{< example id="theme" lang="json" show_preview=false >}}
 {
