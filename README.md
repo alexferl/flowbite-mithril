@@ -94,7 +94,7 @@ npm i -D flowbite github:alexferl/flowbite-mithril
 Add the Flowbite plugin to `tailwind.config.js`, and include content from `flowbite-mithril`:
 ```javascript
 module.exports = {
-  content: ["./node_modules/flowbite-mithril/src/**/*.js"],
+  content: ["./node_modules/flowbite-mithril/**/*.js"],
   plugins: [require("flowbite/plugin")],
 };
 ```
